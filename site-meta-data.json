@@ -1,14 +1,14 @@
 {
-  "title": "BioDat lab",
+  "title": "#COCONUT",
   "siteUrl": "https://coconut.or.id/",
-  "description": "Lab website for Titipat Achakulvisut's lab at Mahidol University, Thailand",
+  "description": "Lab website for COCONUT Computer Club at Makassar, Thailand",
   "ogImage": "/assets/logos/og-image.jpeg",
   "home": {
     "title": "COCONUT Computer Club @ STMIK Profesional",
     "description": "Computer Club Oriented Network, Utility & Technology (COCONUT) was established in April, 2008 at the School Of informatics management And Computer (STMIK Professional Makassar), for conducting research & development activities in the fields of Computer Science and Information Technology. It was envisioned as an institute for advanced and high quality applied research working in collaboration with industries and other academic institutions on national and international levels to bring about the IT revolution in Indonesia and help build a knowledge driven economy. We strive to gather capable and competent researcher generations at one platform and provide them with favorable and motivational environment for creating innovative technologies and products.",
-    "interests": "Science of Science | Applied Natural Language Processing | Applied Machine Learning",
+    "interests": "Cyber Security | Computer Vision | Applied Machine Learning",
     "funders": "We got generous funding support from many organizations including Center for Open Science, Defense Advanced Research Projects Agency (DARPA), Youth Startup Fund (TED Fund) Thailand, and National Research Council of Thailand (NRCT). You can see our funders below.",
-    "collaborators": "We collaborate with multiple researchers, institutes, conferences, and organizations from outside and in Thailand. This includes Neuromatch, Center for Open Science (COS), Konrad Kording Lab at the University of Pennsylvania, Daniel Acuna Lab at Syracuse University, Nidhi Seethapathi at MIT, Siriraj Hospital, 425Degree Thailand, VISTEC Thailand, AI Research Thailand, and many others.",
+    "collaborators": "We collaborate with multiple researchers, institutes, conferences, and organizations from outside and in Indonesia. This includes Neuromatch, Center for Open Science (COS), Konrad Kording Lab at the University of Pennsylvania, Daniel Acuna Lab at Syracuse University, Nidhi Seethapathi at MIT, Siriraj Hospital, 425Degree Thailand, VISTEC Thailand, AI Research Thailand, and many others.",
     "funder-logos": {
       "light": [
         "/assets/logos/darpa-light.png",
