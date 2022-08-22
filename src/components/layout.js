@@ -26,11 +26,11 @@ export default ({ children }) => {
       {children}
       <footer className="site-footer">
         <p>
-          &copy; {new Date().getFullYear()} BioDat Lab &bull; Crafted with{" "}
+          &copy; {new Date().getFullYear()} Coconut Lab &bull; Crafted with{" "}
           <span role="img" aria-label="love">
             ❤️
           </span>
-          &nbsp; by <a href="https://github.com/titipata">titipata</a>
+          &nbsp; by <a href="https://github.com/kelapa148">kelapa148</a>
         </p>
       </footer>
     </div>
