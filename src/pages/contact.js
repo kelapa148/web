@@ -31,7 +31,7 @@ const ContactPage = ({ data: { site } }) => {
           <h1 className="post-title">Contact us</h1>
           <div className="primary-content">
             If you are interested to join the lab or collaborate, please do not
-            hesitate to send Titipat an email (surat [AT] coconut.or.id) or
+            hesitate to send us an email (surat [AT] coconut.or.id) or
             using the form in this page &rarr;
           </div>
           <div className="primary-content">
