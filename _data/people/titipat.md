@@ -1,31 +1,31 @@
 ---
 template: BlogPost
-path: /people/titipat
+path: /people/nhalim
 date: 2020-01-01T06:15:50.738Z
-title: Titipat Achakulvisut
+title: Nurkholish Halim
 thumbnail: /assets/people/titipat.png
 position: PI
-metaDescription: Principal investigator
+metaDescription: Cybersecurity & System Architect 
 order: 0
 ---
 
-- Tenure track lecturer at Mahidol University
+- Independent Researcher
 - Contact: please see [contact](/contact) page
 
-Titipat Achakulvisut runs the biomedial and data lab (BioDat lab) at the Department of Biomedical Engineering, Mahidol University, Nakhon Pathom, Thailand. He completed his Ph.D. in Bioengineering at University of Pennsylvania with Konrad Kording working on applying natural language processing and machine learning to improve scientific processes. His interests are to combine NLP, ML, and tools to improve science itself. In extension to his core research, he also broadly interests in applying ML and NLP in biomedical and business domains in Thailand where he collaborate with multiple research groups and companies in Thailand pushing NLP and ML for real use cases.
+Nur runs the research group COCONUT at the Department of Computer Engineering, School Of informatics management And Computer Profesional, Makassar, Indonesia. Extensive experiences in large and complex enterprise organization, startup, banking, telecommunication, military and intelligence agency. Focus on delivering solutions with innovative and efficient spirit. Have a working knowledge of low-level network protocols (e.g. HTTP, IPv4, TCP, UDP, ICMP, Ethernet, and 802.11). Comfortable working with Unix-like, cloud environment like AWS, GCP, Azure, Openshift and embedded system. Also, Enjoy building high scalable and high performance services (e.g. REST APIs, gRPC), internet facing production-grade applications in distributed virtualized or containerized environments. Having understanding to design and implementation security or software architecture. Proven Deep Technical Experience in Security Perimeter Defense Technology, Machine learning, Computer Vision and Cloud-Native Security..
 
 ## Positions and previous work
 
-- Co-founder of Neuromatch [neuromatch.io](https://neuromatch.io/)
-- Organizer of Neuromatch Conferences (NMC) [conference.neuromatch.io](https://conference.neuromatch.io/)
-- Online Co-chair at Asian Conference in Machine Leanring (ACML) 2021
-- VISTEC-depa Thailand AI Research Institute [https://airesearch.in.th/](https://airesearch.in.th/)
-- Asian Conference in Machine Learning (ACML) workshop on Machine learning 2020 (see [here](https://acml-conf.github.io/2020-workshop-ml-in-thailand/))
+- System & Technology Architect of Onelabs [onelabs.co](https://onelabs.co/)
+- IT Security Manager [Bukalapak.com](https://bukalapak.com/) 2019
+- Fraud Expert [XL Axiata](https://www.xl.co.id/) 2018
+- Senior Security Engineer [OVO.id](https://ovo.id/)
+- Senior Consulting Engineer (PT Datacomm Diangraha](https://dcloud.id/))
 
 ## Outside research
 
-Titipat actively write his blog posts in Thai at [tupleblog](https://tupleblog.github.io/), contribute to open-source community (see [github.com/titipata/](https://github.com/titipata/)), answer questions on Stack Overflow (see [Stack Overflow](https://stackoverflow.com/users/3626961/titipata)), and push local machine learning and natural language processing (NLP) communities in Thailand. He co-created a program for high school students to learn basic data science and artificial intelligence, [AI Builders](https://ai-builders.github.io/). He also actively work with companies such as [425Degree](https://www.425degree.com/), Thailand, where he applies data science and machine learning approaches to solve business questions.
+Nur actively write his research in International Journal at [Array](https://www.sciencedirect.com/journal/array), contribute to open-source community (see [github.com/#](https://github.com/#/)), answer questions on Stack Overflow (see [Stack Overflow](https://stackoverflow.com/#)), and push local machine learning and natural language processing (NLP) communities in Indonesia. He co-created a program for high school students to learn basic data science and artificial intelligence, [AI Builders](https://#/). He also actively work with companies such as [Bank OCBC-NISP](https://www.ocbcnisp.com/), Indonesia, where he applies data science, cybersecurity and machine learning approaches to solve business questions.
 
 ## More information
 
-You can find more information in his [CV](https://github.com/titipata/titipat_cv/blob/master/pdf/Titipat_CV.pdf) and his GitHub [@titipata](https://github.com/titipata).
+You can find more information in his [CV](https://#) and his LinkedIn [@nurkholish](https://www.linkedin.com/in/nurkholish).
