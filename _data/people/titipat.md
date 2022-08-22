@@ -20,7 +20,7 @@ Nur runs the research group COCONUT at the Department of Computer Engineering, S
 - IT Security Manager [Bukalapak.com](https://bukalapak.com/) 2019
 - Fraud Expert [XL Axiata](https://www.xl.co.id/) 2018
 - Senior Security Engineer [OVO.id](https://ovo.id/)
-- Senior Consulting Engineer (PT Datacomm Diangraha](https://dcloud.id/))
+- Senior Consulting Engineer [PT Datacomm Diangraha](https://dcloud.id/)
 
 ## Outside research
 
