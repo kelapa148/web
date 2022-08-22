@@ -44,12 +44,12 @@
   journal: Trends in Cognitive Sciences
   url: https://www.sciencedirect.com/science/article/abs/pii/S1364661321000954?dgcid=author
   year: 2020
-- title: "Towards Democratizing and Automating Online Conferences: Lessons from the Neuromatch Conferences"
-  authors: T Achakulvisut, T Ruangrong, P Mineault, TP Vogels, MAK Peters, ...
-  journal: Trends in Cognitive Sciences
-  url: https://www.sciencedirect.com/science/article/abs/pii/S1364661321000097
-  year: 2021
-  pdf: /assets/publications/titipat-tics-2021.pdf
+- title: "Stochastic recognition of human daily activities via hybrid descriptors and random forest using wearable sensors"
+  authors: N Halim.
+  journal: Array
+  url: https://www.sciencedirect.com/science/article/pii/S2590005622000431
+  year: 2022
+  pdf: /assets/publications/halim-array2022.pdf
 - title: "AI Builders: Teaching Thai Students to BuildEnd-to-End Machine Learning Projects Online"
   authors: C Polpanumas, P Limkonchotiwat, B Matupumanon, C Chaksangchaichot, N Chumlek, N Phaphoom, P Siwatammarat, P Laohapiengsak, S Amornpornwiwat, W Daroontham1, E Chuangsuwanich, K Kulruchakorn, SNutanong, T Achakulvisut
   journal: 2021 IEEE International Conference on Teaching, Assessment, and Learning for Engineering (TALE)
