@@ -39,15 +39,15 @@
   journal: Journal of Open Source Software 5 (46), 1979
   url: https://joss.theoj.org/papers/10.21105/joss.01979.pdf
   year: 2020
-- title: "Neuromatch Academy: Teaching Computational Neuroscience with global accessibility"
-  authors: T van Viegen, A Akrami, K Bonnen, E DeWitt, A Hyafil, H Ledmyr, ...
-  journal: Trends in Cognitive Sciences
-  url: https://www.sciencedirect.com/science/article/abs/pii/S1364661321000954?dgcid=author
+- title: "Development of Human Resources in Android-based Information System for People with Social Welfare Problems"
+  authors: A Arman, A Alang, Y Malago
+  journal: Indonesian Journal of Law and Economics Review
+  url: https://ijler.umsida.ac.id/index.php/ijler/article/view/689/701
   year: 2020
-- title: "Stochastic recognition of human daily activities via hybrid descriptors and random forest using wearable sensors"
+- title: "Stochastic recognition of Human daily activities via Hybrid Descriptors and Random Forest using Wearable sensors"
   authors: N Halim.
-  journal: Array
-  url: https://www.sciencedirect.com/science/article/pii/S2590005622000431
+  journal: ScienceDirect (Array)
+  url: https://doi.org/10.1016/j.array.2022.100190
   year: 2022
   pdf: /assets/publications/halim-array2022.pdf
 - title: "AI Builders: Teaching Thai Students to BuildEnd-to-End Machine Learning Projects Online"
