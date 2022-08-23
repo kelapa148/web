@@ -3,7 +3,7 @@ template: BlogPost
 path: /people/nhalim
 date: 2020-01-01T06:15:50.738Z
 title: Nurkholish Halim
-thumbnail: /assets/people/titipat.png
+thumbnail: /assets/people/oghie.png
 position: PI
 metaDescription: Cybersecurity & System Architect 
 order: 0
