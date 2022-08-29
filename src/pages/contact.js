@@ -41,7 +41,7 @@ const ContactPage = ({ data: { site } }) => {
           </div>
           <div className="primary-content">
             <b>Graduate students: </b>
-            Due to limitation of the Mahidol university's rule, We cannot hire
+            Due to limitation of the university's rule, We cannot hire
             graduate students yet. If you are interested in doing research,
             please send a CV with a brief research interest. Then you can
             arrange a discussion before applying. You can potentially apply to
