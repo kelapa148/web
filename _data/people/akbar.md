@@ -9,6 +9,6 @@ metaDescription: DevOps Engineer
 order: 1
 ---
 
-Akbar is a DevOps at the lab working on backend, frontend for applications, and site reability engineer curated to our need. His work span across building an annotation tool, a backend for services machine learning, and a web interface for scientific claim extraction. One of his work is maintain reability  [History](https://www.historia.id/) , [Opini.id](https://opini.id). His main expertise is CI/CD, AWS, Linux Administration.
+Akbar is a DevOps at the lab working on backend, frontend for applications, and site reability engineer curated to our need. His work span across building an annotation tool, a backend for services machine learning, and a web interface for scientific claim extraction. One of his work is maintain reability  [Historia](https://www.historia.id/) , [Opini.id](https://opini.id). His main expertise is CI/CD, AWS, Linux Administration.
 
 GitHub: [@](https://#)
