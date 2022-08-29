@@ -15,4 +15,4 @@ His field of interests are Fintech and payment development. Currently, he is wor
 
 ## More information
 
-You can find more information on his [Linkedin] (https://www.linkedin.com/in/recky-phiter-b31ab49b/)  and his GitHub [@](https://#).
+You can find more information on his [Linkedin](https://www.linkedin.com/in/recky-phiter-b31ab49b)  and his GitHub [@](https://#).
