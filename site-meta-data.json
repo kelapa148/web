@@ -12,11 +12,11 @@
     "funder-logos": {
       "light": [
         "/assets/logos/lontar.svg",
-        "/assets/logos/algo.png"
+        "/assets/logos/algo.svg"
       ],
       "dark": [
         "/assets/logos/lontar-dark.svg",
-        "/assets/logos/algo.png"
+        "/assets/logos/algo.svg"
       ]
     },
     "research": {
