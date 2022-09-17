@@ -26,8 +26,7 @@ find tutorials on shell scripts (Bash, Zsh, ...). I list some of them below.
 We generally use `git` as our version control and store many repositories on GitHub.
 Here, familiarize yourself with Git will help a lot in your code development.
 
-- [มาเริ่มใช้ Git กัน [part 1]](https://tupleblog.github.io/use-git-part1/) in Thai
-- Linkedin Git Essential Training: The Basics
+- [Git Essential Training: The Basics](https://joeyklee.github.io/friendly-github-intro/guides/github-essentials/)
 
 There are many more tutorials today. Make sure you know all the basic git terms such as add,
 pull, fetch, merge, pull request.
