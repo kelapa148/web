@@ -2,10 +2,10 @@
 template: BlogPost
 path: /blog/A-Deep-Dive-into-eBPF-Writing-an-Efficient-DNS-Monitoring
 date: 2022-08-30T07:08:53.137Z
-title: A Deep Dive into eBPF Writing an Efficient DNS Monitoring
+title: A Deep Dive into eBPF`:` Writing an Efficient DNS Monitoring
 thumbnail: "/assets/blogs/ebpf_nurkholish_halim.png"
 author: Nurkholish Halim
-metaDescription: A Deep Dive into eBPF Writing an Efficient DNS Monitoring
+metaDescription: A Deep Dive into eBPF`:` Writing an Efficient DNS Monitoring
 ---
 
 eBPF is an in-kernel virtual machine, provides a high-level library, instruction set and an execution environment inside the Linux kernel. It’s used in many Linux kernel subsystems, most prominently networking, tracing, debugging and security. Including to modify the processing of packets in the kernel and also allows the programming of network devices such as SmartNICs.
