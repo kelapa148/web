@@ -23,7 +23,7 @@ const PublicationPage = ({
       <div className="primary-content">
         Please see
         {' '}
-        <a href="https://scholar.google.com/citations?user=L56sgUQAAAAJ">Titipat's Google scholar</a>
+        <a href="https://scholar.google.com/">Google scholar</a>
         {' '}
         for up-to-date publications or list of publications or below.
         If you do not have access to any publication, please email.
