@@ -14,3 +14,34 @@ I will not talk here detail about what eBPF is. A lot of posts have already been
 ## Introduction
 
 Let’s say the host can send legitimate DNS requests, but the IP addresses it will send them are unknown. In the network filter log, you can see that the requests are still coming. But it’s not clear — is this just legitimate, or is the information already leaking to the attackers? It would be easier if the domain to which the server sends data were known. Unfortunately, PTR is out of fashion, and securitytrails show either nothing or too much on this IP.
+
+You can run tcpdump. But who wants to look at the monitor constantly? And if there is more than one server? There is a packetbeat from ELK Stack and this is a monster that has eaten out the processor on all my servers. Osquery is a good tool that knows much about network connections and not about DNS queries. The relevant offer was closed. Zeek — I learned about it while looking for how to track DNS queries. It seems like it’s not bad, but I was confused by two points: it monitors not only DNS, which means resources will be spent on work that I don’t need the result of (although, perhaps, you can select protocols in the settings); and it also doesn’t know anything about which process sent the request.
+
+We will write in Python and start with the simplest — we will understand how Python and eBPF interact. First, we will install these packages:
+
+```bash
+#apt install python3-bpfcc bpfcc-tools libbpfcc linux-headers-$(uname -r)
+```
+This is for Ubuntu. But if you go into the kernel, finding the necessary packages for your distribution should not be a problem. Now let’s get started:
+```python
+#!/usr/bin/env python3
+from bcc import BPF
+FIRST_BPF = r"""
+int first(void *ctx) {
+  bpf_trace_printk("Hello world! execve() is calling\n");
+  return 0;
+}
+"""
+bpf = BPF(text=FIRST_BPF)
+bpf.attach_kprobe(event=bpf.get_syscall_fnname("execve"), fn_name="first")
+while True:
+    try:
+        (_, _, _, _, _, event_b) = bpf.trace_fields()
+        events = event_b.decode('utf8')
+        if 'Hello world' in events:
+            print(events)
+    except ValueError:
+        continue
+    except KeyboardInterrupt:
+        break
+```
