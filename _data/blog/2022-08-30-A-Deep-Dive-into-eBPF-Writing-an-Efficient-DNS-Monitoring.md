@@ -45,3 +45,6 @@ while True:
     except KeyboardInterrupt:
         break
 ```
+> Note: Unprivileged users were allowed to load eBPF programs by default in Ubuntu 20.04 LTS and 18.04 LTS, however, on more recent Ubuntu releases (21.10 and 22.04 LTS) this was disabled by default for security concern. You can re-enable this ability :
+
+$ sudo sysctl kernel.unprivileged_bpf_disabled=0
