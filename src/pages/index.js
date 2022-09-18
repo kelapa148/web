@@ -19,9 +19,7 @@ const IndexPage = ({
   const { theme } = useThemeContext()
 
   const ResearchImages = home.research[theme].map((imgPath) => (
-    <div key={imgPath} className="image-container">
       <object data={imgPath}></object>
-    </div>
   ))
 
   const FunderLogos = home.funder_logos[theme].map((imgPath) => (
@@ -35,7 +33,7 @@ const IndexPage = ({
       <HelmetWrapper />
       <HeroHeader/>
       <h2>Research</h2>
-      <div className="two-grids outer-container">
+      <div className="primary-content">
         {ResearchImages}
       </div>
       <h2>Funders</h2>
