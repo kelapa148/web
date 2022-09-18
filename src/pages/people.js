@@ -13,7 +13,7 @@ const PeoplePage = ({
     .filter(
       edge =>
         !!edge.node.frontmatter.date &&
-        edge.node.frontmatter.position !== "alumni" && !== "active"
+        edge.node.frontmatter.position !== "alumni" && edge.node.frontmatter.position !== "active"
     )
     .map(edge => <PeopleLink key={edge.node.id} data={edge.node} />);
 
