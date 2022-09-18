@@ -20,7 +20,7 @@ const IndexPage = ({
 
   const ResearchImages = home.research[theme].map((imgPath) => (
     <div key={imgPath} className="image-container">
-      <img src={imgPath} alt={imgPath} />
+      <object data={imgPath}></object>
     </div>
   ))
 
