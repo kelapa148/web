@@ -116,7 +116,7 @@ const ContactPage = ({ data: { site } }) => {
           >
             {submitted ? (
               <p style={{ margin: 0, lineHeight: "1.5em" }}>
-                Your message has successfully been sent to Titipat! It generally
+                Your message has successfully been sent to COCONUT Administrator! It generally
                 takes one to two days for him to reply.
               </p>
             ) : (
