@@ -13,7 +13,7 @@ const PeoplePage = ({
     .filter(
       edge =>
         !!edge.node.frontmatter.date &&
-        edge.node.frontmatter.position !== "alumni"
+        edge.node.frontmatter.position !== "alumni" && !== "active"
     )
     .map(edge => <PeopleLink key={edge.node.id} data={edge.node} />);
 
@@ -22,6 +22,14 @@ const PeoplePage = ({
       edge =>
         !!edge.node.frontmatter.date &&
         edge.node.frontmatter.position === "alumni"
+    )
+    .map(edge => <PeopleLink key={edge.node.id} data={edge.node} />);
+
+  const activePeople = edges
+    .filter(
+      edge =>
+        !!edge.node.frontmatter.date &&
+        edge.node.frontmatter.position === "active"
     )
     .map(edge => <PeopleLink key={edge.node.id} data={edge.node} />);
 
@@ -37,6 +45,10 @@ const PeoplePage = ({
       <h2>Previous lab members</h2>
       <div className="grids small" style={{ marginBottom: "32px" }}>
         {prevPeople}
+      </div>
+      <h2>Active Members</h2>
+      <div className="grids small" style={{ marginBottom: "32px" }}>
+        {activePeople}
       </div>
     </Layout>
   );
