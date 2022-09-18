@@ -36,26 +36,6 @@ const IndexPage = ({
       <HeroHeader/>
       <h2>Research</h2>
       <div className="primary-content">
-      <style type="text/css">
-      .embed-container {
-        height:0;
-        margin-bottom:18px;
-        overflow:hidden;
-        padding-bottom:56.25%; /* 16/9 ratio */
-        padding-top:30px; /* IE6 workaround*/
-        position:relative;
-      }
-
-      .embed-container iframe,
-      .embed-container object,
-      .embed-container embed {
-        height:100% !important;
-        left:0;
-        position:absolute;
-        top:0;
-        width:100% !important;
-      }
-      </style>
         {ResearchImages}
       </div>
       <h2>Funders</h2>
