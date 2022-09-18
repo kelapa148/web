@@ -9,6 +9,6 @@ metaDescription: Undergraduate student
 order: 3
 ---
 
-Bayu is currently an undergraduate student at the Department of Biomedical Engineering, Mahidol University.
+Bayu is currently an undergraduate student at the Department of Computer Engineering, STMIK Profesional.
 
-Her research interests are applying machine learning and deep learning in biomedical informatics and working on biomedical simulation.
+Her research interests are applying machine learning and deep learning in data informatics and working on data simulation.
