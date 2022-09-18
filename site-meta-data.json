@@ -21,7 +21,7 @@
     },
     "research": {
       "light": [
-        "<embed>/assets/js/a.html</embed>"
+        "/assets/js/a.html"
       ],
       "dark": [
         "/assets/logos/science-of-science-dark.png",
