@@ -7,7 +7,7 @@ thumbnail: /assets/people/wahid.jpg
 position: active
 endYear: 2021
 metaDescription: Undergraduate student
-order: 5
+order: 8
 ---
 
 Wahid is a senior Information System major at STMIK Prefesional College, Makassar. He worked on the organization of the tenth edition of the coconut computer club.
