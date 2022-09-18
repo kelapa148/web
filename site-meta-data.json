@@ -21,8 +21,46 @@
     },
     "research": {
       "light": [
-        "/assets/logos/science-of-science-light.png",
-        "/assets/logos/applied-ml-nlp-light.png"
+        "<canvas height="340" width="1150" id="canvas">
+							<script src="assets/js/create.js" type="text/javascript"></script>
+							<script src="assets/js/animated.js" type="text/javascript"></script> 
+							<script type="text/javascript">var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init_animation() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("366FF64F2C4B44D78A31213698A3083D");
+	var lib=comp.getLibrary();
+	handleAnimationComplete({},comp);
+}
+function handleAnimationComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	exportRoot = new lib.raid_overview_animated();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}
+	fnStartAnimation();
+}
+window.onload = init_animation();
+				
+				</script>
+              <style type="text/css">
+#canvas {
+                                    max-width: 814px;
+                                    margin: 0px auto;
+                                    display: block;
+                                    width: 100% !important;
+                                    height: auto;
+                                }
+</style>
+</canvas>"
       ],
       "dark": [
         "/assets/logos/science-of-science-dark.png",
