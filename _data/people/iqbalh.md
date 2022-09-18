@@ -9,8 +9,8 @@ metaDescription: Security Consultant
 order: 6
 ---
 
-Muh Iqbal H is currrently an undergraduate student at the Department of Biomedical Engineering at Mahidol University.
+Muh Iqbal H is currrently an undergraduate student at the Department of Information System at STMIK Profesional.
 
-His field of interests are machine learning and application development. Currently, his works include detecting behavior of monkeys from videos and visual telemedicine computing. His aims are to launch some freaking amazing medical applications to the market. And he can sleep for 8 hours per day.
+His field of interests are cyber security and application development. Currently, his works include next-generation intrusion detection system and offensive security. His aims are to launch some amazing security tools to the repo. And he can sleep for 8 hours per day.
 
 > "The scariest moment is always just before you start" - Stephen King
