@@ -9,7 +9,7 @@ metaDescription: Security Engineer
 order: 4
 ---
 
-Yaomal is currently an undergraduate student at department of Biomedical Engineering, Mahidol University.
+Yaomal is currently an undergraduate student at department of Computer Engineering, STMIK Profesional.
 
 Twinkle, twinkle, little star. In the ocean of stars ,there is one little plant that wades in the blue. People name this tiny rolling stone "EARTH".
 He joins the lab ocean line in 2021. He pictured the colorful coastal, a shoal of dolphin and comet. Well, there are the dolphins,
