@@ -16,9 +16,6 @@ const ContactPage = ({ data: { site } }) => {
 
   const [formError, setFormError] = useState([]);
 
-  useEffect(() => {
-    init(process.env.GATSBY_EMAILJS_USER_ID);
-  }, []);
 
   return (
     <Layout>
@@ -101,7 +98,8 @@ const ContactPage = ({ data: { site } }) => {
                   .send(
                     process.env.GATSBY_EMAILJS_SERVICE_ID,
                     process.env.GATSBY_EMAILJS_TEMPLATE_ID,
-                    templateParams
+                    templateParams,
+                    process.env.GATSBY_EMAILJS_USER_ID
                   )
                   .then(
                     () => {
