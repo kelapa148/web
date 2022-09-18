@@ -11,6 +11,11 @@
     max-width: 100%;
     width: 400px;
   }
+  
+  object {
+     width:100%;
+     max-height:100%;
+}
 
   &.funder {
     padding: 8px;
