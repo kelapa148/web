@@ -19,7 +19,30 @@ const IndexPage = ({
   const { theme } = useThemeContext()
 
   const ResearchImages = home.research[theme].map((imgPath) => (
-      <object data={imgPath} width="700" height="300"></object>
+    <style type="text/css">
+  .embed-container {
+    height:0;
+    margin-bottom:18px;
+    overflow:hidden;
+    padding-bottom:56.25%; /* 16/9 ratio */
+    padding-top:30px; /* IE6 workaround*/
+    position:relative;
+  }
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    height:100% !important;
+    left:0;
+    position:absolute;
+    top:0;
+    width:100% !important;
+  }
+</style>
+
+<div class="embed-container"><object data={imgPath}></object>
+</div>
+      
   ))
 
   const FunderLogos = home.funder_logos[theme].map((imgPath) => (
