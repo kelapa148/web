@@ -19,7 +19,7 @@ const IndexPage = ({
   const { theme } = useThemeContext()
 
   const ResearchImages = home.research[theme].map((imgPath) => (
-      <embed src={imgPath}>
+      <object data={imgPath} width="700" height="300"></object>
   ))
 
   const FunderLogos = home.funder_logos[theme].map((imgPath) => (
