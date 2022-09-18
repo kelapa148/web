@@ -420,6 +420,24 @@ body.light {
   top: 8px;
   left: 2px;
 }
+.embed-container {
+    height:0;
+    margin-bottom:18px;
+    overflow:hidden;
+    padding-bottom:56.25%; /* 16/9 ratio */
+    padding-top:30px; /* IE6 workaround*/
+    position:relative;
+  }
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    height:100% !important;
+    left:0;
+    position:absolute;
+    top:0;
+    width:100% !important;
+  }
 
 @import "./index";
 @import "./people";
