@@ -117,7 +117,7 @@ bpf = BPF(text=BPF_PROGRAM)
 function_dns_matching = bpf.load_func("dns_matching", BPF.SOCKET_FILTER)
 BPF.attach_raw_socket(function_dns_matching, '')
 ```
-This difference from the previous example is because now our program will be called not when calling any function but for each package. An empty argument in **attach_raw_socket** means “all network interfaces,” If we needed a specific one, its name should be there.
+This difference from the previous example is because now our program will be called not when calling any function but for each package. An empty argument in **attach\_raw\_socket** means “all network interfaces,” If we needed a specific one, its name should be there.
 
 Switching the socket to blocking mode:
 ```python
@@ -212,7 +212,7 @@ This example will show you which DNS requests/responses pass through your networ
 ## From Packet to Process
 To get information about the process in eBPF, the following functions are used — **bpf_get_current_pid_tgid()**, **bpf_get_current_uid_gid()**, **bpf_get_current_comm(char \*buf, int size_of_buf)**. They are available when we bind our program to a call to some kernel function (as in the first example). The UID/GID should be clear. But the first one requires an explanation for those who have not previously encountered such details of the kernel operation. The fact is that what is seen as a PID in the kernel is displayed in user space as the process thread ID. And what the kernel considers thread group ID-in user space is the PID. Similarly, bpf_get_current_comm() returns not the usual process name, which can be seen through ps command, but the thread name.
 
-All right, we’ll get the process data. How do we pass them to the user space? Tables are used for this purpose. They are created as **BPF_PERF_OUTPUT(event)**, passed by the method event.perf_submit(ctx, data, data_size), and received by polling via b.perf_buffer_poll(). After that, as soon as the data is available, the function callback() will be called, thus: b[“event”].open_perf_buffer(callback).
+All right, we’ll get the process data. How do we pass them to the user space? Tables are used for this purpose. They are created as **BPF\_PERF\_OUTPUT(event)**, passed by the method event.perf_submit(ctx, data, data_size), and received by polling via b.perf_buffer_poll(). After that, as soon as the data is available, the function callback() will be called, thus: b[“event”].open_perf_buffer(callback).
 
 I will describe all of this in detail below, but for now, let’s continue the theory and reflect on this. We can transmit the packet itself as well as the data. But to do this, we must select a variable of a certain length in the structure with the transmitted data. Which one? The quick and incorrect answer is 512 bytes. But it does not consider EDNS, and I would also like to track (correctly!) DNS packets going over TCP. So we would have to allocate a large amount “in reserve”, discard packages that are still larger, and most of the time, we will have more memory allocated than necessary. I wouldn’t say I like this approach. Fortunately, there is another method — perf_submit_skb(). In addition to data, it also transmits the specified number of bytes of the packet from the buffer. But there is a caveat — the method is only available for network programs eBPF- socket, XDP. I.e., those where we can not get information about the process.
 
@@ -252,7 +252,7 @@ Total: when calling the kernel function to send a packet, we store information a
 Well, the basic logic of the future program was talked through — let’s already program!
 
 ## My Name Is Process
-Let’s start by getting information about the process. The **udp_sendmsg()** and **tcp_sendmsg()** functions are used to send packets. Both take the sock structure that we need as the first argument. There are two ways to access the arguments of the function under investigation in eBPF: specify them as parameters of our function, or use the macro **PT_REGS_PARMx**, where x is the argument number. I’ll show you both of these options below. And here is our first program, C_BPF_KPROBE:
+Let’s start by getting information about the process. The **udp_sendmsg()** and **tcp_sendmsg()** functions are used to send packets. Both take the sock structure that we need as the first argument. There are two ways to access the arguments of the function under investigation in eBPF: specify them as parameters of our function, or use the macro **PT\_REGS\_PARMx**, where x is the argument number. I’ll show you both of these options below. And here is our first program, C_BPF_KPROBE:
 ```C
 // The structure that will be used as the key for 
 // eBPF table 'proc_ports':
@@ -325,7 +325,7 @@ __u32 local_port; /* stored in host byte order */
 ```
 
 ## Extracted to User Space
-Our second program **BPF_SOCK_TEXT**, which will “hang” on the socket, will check for information about the corresponding process for each packet and transmit it, along with the packet itself, to user space:
+Our second program **BPF\_SOCK\_TEXT**, which will “hang” on the socket, will check for information about the corresponding process for each packet and transmit it, along with the packet itself, to user space:
 ```C
 // The structure that will be used as the key for
 // eBPF table 'proc_ports':
@@ -428,7 +428,7 @@ From Python, we need three things: load our programs into the kernel, get data f
 The first two tasks are simple. Moreover, we have already considered both methods of working with eBPF in the first examples:
 ```python
 # BPF initialization:
-bpf_kprobe = BPF(text=BPF_KPROBE_TEXT)
+bpf_kprobe = BPF(text=C_BPF_KPROBE)
 bpf_sock = BPF(text=BPF_SOCK_TEXT)
 # Send UDP:
 bpf_kprobe.attach_kprobe(event="udp_sendmsg", fn_name="trace_udp_sendmsg")
