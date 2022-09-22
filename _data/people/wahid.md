@@ -10,7 +10,7 @@ metaDescription: Undergraduate student
 order: 8
 ---
 
-Wahid is a senior Information System major at STMIK Prefesional College, Makassar. He worked on the organization of the tenth edition of the coconut computer club.
+xWahid is a senior Information System major at STMIK Prefesional College, Makassar. He worked on the organization of the tenth edition of the coconut computer club.
 
 In addition, he started looking at the overall effect of one-on-one algorithmic matching on collaboration at scientific conferences.
 Him main interest area is applications of React in computational social science. He would like to continue researching how backend and data analysis can tackle social issues.
