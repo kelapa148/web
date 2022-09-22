@@ -8,7 +8,7 @@ author: Nurkholish Halim
 metaDescription: A Deep Dive into eBPF - Writing an Efficient DNS Monitoring
 ---
 
-[eBPF](https://docs.kernel.org/bpf/classic_vs_extended.html) is an in-kernel virtual machine, provides a high-level library, instruction set and an execution environment inside the Linux kernel. It’s used in many Linux kernel subsystems, most prominently networking, tracing, debugging and security. Including to modify the processing of packets in the kernel and also allows the programming of network devices such as SmartNICs.
+[eBPF](https://docs.kernel.org/bpf/classic_vs_extended.html) is an in-kernel virtual machine, provides a high-level library, instruction set and an execution environment inside the Linux kernel. It’s used in many Linux kernel subsystems, most prominently networking, tracing, debugging and security. Including to modify the processing of packets in the kernel and also allows the programming of network devices such as [SmartNICs](https://blogs.nvidia.com/blog/2021/10/29/what-is-a-smartnic/).
 
 I will not talk here the detail about what eBPF is. [A lot of posts have already been published about the eBPF](https://github.com/zoidbergwill/awesome-ebpf) and in a variety of languages. Although many of these are fairly informative, they don’t answer the most important questions: How does the eBPF process packets and monitor the packet take from the host to the user?. I will describe the process of creating an actual application from the beginning, especially in monitoring requests, responses and process in DNS, gradually enriching the functionality and accompanying all this with explanations, comments, and links to the source code. And sometimes a little off the side because you want to give a few more examples, not just a solution to a specific problem. As a result, I hope those who want to get acquainted with eBPF will spend less time researching for useful materials and start programming faster.
 ## Introduction
@@ -49,13 +49,13 @@ while True:
 
 > $ sudo sysctl kernel.unprivileged_bpf_disabled=0
 
-As befits all hello-world examples, it doesn’t do anything useful but introduces us to the basics. Every time any program on the host calls the **execve()** system call, the **first()** function of our program gets executed. To trigger it, you can run the command “**ls**|**cat**|**grep**|**clear** or any command containing **execve()**” on a different console, then our code gets executed. eBPF programs can be called on various events occurring in the kernel. **attach_kprobe()** means triggered when a specific kernel function is called. But we are more used to dealing with system calls. Who knows the names of the corresponding functions? Therefore, a helper function converts the system call name to a kernel function **get_syscall_fnname()**.
+As befits all hello-world examples, it doesn’t do anything useful but introduces us to the basics. Every time any program on the host calls the **execve()** system call, the **first()** function of our program gets executed. To trigger it, you can run the command “**ls**|**cat**|**grep**|**clear** or any command containing **execve()**” on a different console, then our code gets executed. eBPF programs can be called on various events occurring in the kernel. **attach\_kprobe()** means triggered when a specific kernel function is called. But we are more used to dealing with system calls. Who knows the names of the corresponding functions? Therefore, a helper function converts the system call name to a kernel function **get\_syscall\_fnname()**.
 
-The simplest output option in eBPF is a function **bpf_trace_printk()**. But this is the output for debugging. Everything you pass to this function will be available via a file */sys/kernel/debug/tracing/trace_pipe*. And to not read this file in the next console, we use a function trace_fields() that reads this file itself and makes its contents available to us in the program.
+The simplest output option in eBPF is a function **bpf\_trace\_printk()**. But this is the output for debugging. Everything you pass to this function will be available via a file */sys/kernel/debug/tracing/trace_pipe*. And to not read this file in the next console, we use a function trace_fields() that reads this file itself and makes its contents available to us in the program.
 
 The rest of it should be clear — in an infinite loop interrupted by Ctrl-C, we read the debug output, and if “Hello world” occurs in the string, we output it in its entirety.
 
-> **_Note_**: **bpf_trace_printk()** can format text, similar *printf()*, but with important restrictions — no more than 3 arguments and only one of them %s.
+> **_Note_**: **bpf\_trace\_printk()** can format text, similar *printf()*, but with important restrictions — no more than 3 arguments and only one of them %s.
 
 Now that we understand how to work with eBPF in general let’s start building an actual application. It will monitor all DNS requests and responses and log who asked what and what response they received.
 
@@ -210,9 +210,9 @@ while True:
 This example will show you which DNS requests/responses pass through your network interface, but this way, we won’t know what process works with them. That is, just the information, due to the lack of which I did not choose Zeek.
 
 ## From Packet to Process
-To get information about the process in eBPF, the following functions are used — **bpf_get_current_pid_tgid()**, **bpf_get_current_uid_gid()**, **bpf_get_current_comm(char \*buf, int size_of_buf)**. They are available when we bind our program to a call to some kernel function (as in the first example). The UID/GID should be clear. But the first one requires an explanation for those who have not previously encountered such details of the kernel operation. The fact is that what is seen as a PID in the kernel is displayed in user space as the process thread ID. And what the kernel considers thread group ID-in user space is the PID. Similarly, bpf_get_current_comm() returns not the usual process name, which can be seen through ps command, but the thread name.
+To get information about the process in eBPF, the following functions are used — **bpf\_get\_current\_pid\_tgid()**, **bpf\_get\_current\_uid\_gid()**, **bpf\_get\_current\_comm(char \*buf, int size_of_buf)**. They are available when we bind our program to a call to some kernel function (as in the first example). The UID/GID should be clear. But the first one requires an explanation for those who have not previously encountered such details of the kernel operation. The fact is that what is seen as a PID in the kernel is displayed in user space as the process thread ID. And what the kernel considers thread group ID-in user space is the PID. Similarly, bpf\_get\_current\_comm() returns not the usual process name, which can be seen through ps command, but the thread name.
 
-All right, we’ll get the process data. How do we pass them to the user space? Tables are used for this purpose. They are created as **BPF\_PERF\_OUTPUT(event)**, passed by the method event.perf_submit(ctx, data, data_size), and received by polling via b.perf_buffer_poll(). After that, as soon as the data is available, the function callback() will be called, thus: b[“event”].open_perf_buffer(callback).
+All right, we’ll get the process data. How do we pass them to the user space? Tables are used for this purpose. They are created as **BPF\_PERF\_OUTPUT(event)**, passed by the method event.perf_submit(ctx, data, data_size), and received by polling via **b.perf\_buffer\_poll()**. After that, as soon as the data is available, the function **callback()** will be called, thus: b[“event”].open_perf_buffer(callback).
 
 I will describe all of this in detail below, but for now, let’s continue the theory and reflect on this. We can transmit the packet itself as well as the data. But to do this, we must select a variable of a certain length in the structure with the transmitted data. Which one? The quick and incorrect answer is 512 bytes. But it does not consider EDNS, and I would also like to track (correctly!) DNS packets going over TCP. So we would have to allocate a large amount “in reserve”, discard packages that are still larger, and most of the time, we will have more memory allocated than necessary. I wouldn’t say I like this approach. Fortunately, there is another method — perf_submit_skb(). In addition to data, it also transmits the specified number of bytes of the packet from the buffer. But there is a caveat — the method is only available for network programs eBPF- socket, XDP. I.e., those where we can not get information about the process.
 
@@ -312,7 +312,7 @@ int trace_udp_sendmsg(struct pt_regs *ctx, struct sock *sk) {
     return 0;
 }
 ```
-Working with tcp_sendmsg will be absolutely the same. The only difference is that in the structure port_key, the field proto will be equal 6. These two values (17 and 6) are the codes of the UDP and TCP protocols, respectively. You can view these values in the file */etc/protocols*.
+Working with *tcp\_sendmsg* will be absolutely the same. The only difference is that in the structure port_key, the field proto will be equal 6. These two values (17 and 6) are the codes of the UDP and TCP protocols, respectively. You can view these values in the file */etc/protocols*.
 
 Both functions bpf\_get\_current\_\*return 64 bits, so we take the lower and upper 32 bits separately to extract data. Moreover, for PID/TGID, we immediately take them in the usual form (i.e.pid, we write the upper 32 bits in the field, which contain what the kernel considers to be the TGID).
 
@@ -420,7 +420,7 @@ return 0;
 ```
 The program starts in the same way as one of the first examples considered. We move around the packet and collect information from protocols at different levels. The comment that this approach does not consider the actual length of the IP header is still valid. But something new has also been added — for TCP packets, we check the flag — we don’t need packets that don’t carry data (*SYN, ACK*, etc.).
 
-But then we must restore the key to get data from the table *proc_ports*. At the same time, we must distinguish the direction of traffic — after all, when we entered data in the table, we meant that we were the source. But for incoming packets, the source will be the remote server. To understand the direction of movement of packets, I used a field *ingress_ifindex* that is 0 for outgoing traffic.
+But then we must restore the key to get data from the table *proc\_ports*. At the same time, we must distinguish the direction of traffic — after all, when we entered data in the table, we meant that we were the source. But for incoming packets, the source will be the remote server. To understand the direction of movement of packets, I used a field *ingress_ifindex* that is 0 for outgoing traffic.
 
 ## Serving
 From Python, we need three things: load our programs into the kernel, get data from them, and process it.
