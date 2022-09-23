@@ -27,7 +27,7 @@ jobs:
           npx npm@6 run build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.3.0
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           branch: gh-pages
           folder: public # The folder the action should deploy.
