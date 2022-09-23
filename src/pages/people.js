@@ -44,11 +44,11 @@ const PeoplePage = ({
       </div>
       <h2>Previous lab members</h2>
       <div className="grids small" style={{ marginBottom: "32px" }}>
-        {prevPeople}
+        {activePeople}
       </div>
       <h2>Active Members</h2>
       <div className="grids small" style={{ marginBottom: "32px" }}>
-        {activePeople}
+        {prevPeople}
       </div>
     </Layout>
   );
