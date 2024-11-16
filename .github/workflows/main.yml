@@ -10,7 +10,7 @@ env:
   GATSBY_EMAILJS_USER_ID: ${{ secrets.GATSBY_EMAILJS_USER_ID }}
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
