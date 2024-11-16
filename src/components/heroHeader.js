@@ -9,6 +9,8 @@ export default () => (
             home {
               title
               description
+              paramx
+              paramy
               interests
             }
           }
@@ -22,6 +24,8 @@ export default () => (
           className="primary-content"
           dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.home.description}}
         />
+        <div className="primary-content">{data.site.siteMetadata.home.paramx}</div>
+        <div className="primary-content">{data.site.siteMetadata.home.paramy}</div>
         <div className="primary-content">{data.site.siteMetadata.home.interests}</div>
         {/* <Link to='/contact' className="button -primary">Get in touch &rarr;</Link> */}
       </div>
