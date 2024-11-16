@@ -16,15 +16,16 @@ Nur runs the research group COCONUT at the Department of Computer Engineering, S
 
 ## Positions and previous work
 
-- System & Technology Architect of Onelabs [onelabs.co](https://onelabs.co/)
+- System & Technology Architect [OCBC](https://ocbc.id/)
 - IT Security Manager [Bukalapak.com](https://bukalapak.com/) 2019
-- Fraud Expert [XL Axiata](https://www.xl.co.id/) 2018
-- Senior Security Engineer [OVO.id](https://ovo.id/)
-- Senior Consulting Engineer [PT Datacomm Diangraha](https://dcloud.id/)
+- Fraud Management Expert [XL Axiata](https://www.xl.co.id/) 2018
+- Senior Security Engineer [OVO](https://ovo.id/)
+- IT Infrastructure Manager [DOCOTEL](https://www.docotel.com/)
+- Senior Security Consultant [PT Datacomm Diangraha](https://www.datacomm.co.id/) 2014
 
 ## Outside research
 
-Nur actively write his research in International Journal at [Array](https://www.sciencedirect.com/journal/array), contribute to open-source community (see [github.com/#](https://github.com/#/)), answer questions on Stack Overflow (see [Stack Overflow](https://stackoverflow.com/#)), and push local machine learning and natural language processing (NLP) communities in Indonesia. He co-created a program for high school students to learn basic data science and artificial intelligence, [AI Builders](https://#/). He also actively work with companies such as [Bank OCBC-NISP](https://www.ocbcnisp.com/), Indonesia, where he applies data science, cybersecurity and machine learning approaches to solve business questions.
+Nur actively write his research in International Journal at [Array](https://www.sciencedirect.com/journal/array), contribute to open-source community (see [github.com/#](https://github.com/#/)), answer questions on Stack Overflow (see [Stack Overflow](https://stackoverflow.com/#)), and push local machine learning and natural language processing (NLP) communities in Indonesia. He is also actively engaged with communities (IDSECCONF) and banking companies, where he applies data science, cybersecurity, and machine learning approaches to address business challenges.
 
 ## More information
 
