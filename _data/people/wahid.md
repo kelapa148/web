@@ -14,3 +14,5 @@ Wahid is a senior Information System major at STMIK Prefesional College, Makassa
 
 In addition, he started looking at the overall effect of one-on-one algorithmic matching on collaboration at scientific conferences.
 Him main interest area is applications of React in computational social science. He would like to continue researching how backend and data analysis can tackle social issues.
+
+Update / April 2024: Currently works as a security engineer at PT Datacomm Diangraha
