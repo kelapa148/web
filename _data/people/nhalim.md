@@ -25,7 +25,7 @@ Nur runs the research group COCONUT at the Department of Computer Engineering, S
 
 ## Outside research
 
-Nur actively write his research in International Journal at [Array](https://www.sciencedirect.com/journal/array), contribute to open-source community (see [github.com/#](https://github.com/#/)), answer questions on Stack Overflow (see [Stack Overflow](https://stackoverflow.com/#)), and push local machine learning and natural language processing (NLP) communities in Indonesia. He is also actively engaged with communities (IDSECCONF) and banking companies, where he applies data science, cybersecurity, and machine learning approaches to address business challenges.
+Nur actively write his research in International Journal at [Array](https://www.sciencedirect.com/journal/array), contribute to open-source community (see [github.com/#](https://github.com/#/)), answer questions on Stack Overflow (see [Stack Overflow](https://stackoverflow.com/#)), and push local machine learning and natural language processing (NLP) communities in Indonesia. He is also actively engaged with communities [IDSECCONF](https://id.wikipedia.org/wiki/Indonesia_IT_Security_Conference) and banking companies, where he applies data science, cybersecurity, and machine learning approaches to address business challenges.
 
 ## More information
 
