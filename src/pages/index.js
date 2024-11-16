@@ -62,6 +62,8 @@ export const pageQuery = graphql`
         home {
           title
           description
+          paramx
+          paramy
           interests
           funders
           collaborators
