@@ -15,7 +15,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 - **System Engineer:** Orang yang memastikan server atau VM nyala, storage aman, dan jaringan lancar meskipun admin lain lupa baca dokumentasi. Fokusnya di baremetal, storage, dan jaringan tingkat lanjut. Orang yang bikin server tetap hidup meskipun disiksa user, DDoS, dan admin lain. Pekerjaan mereka mulai dari ngutak-atik kernel sampai nge-tweak semua yang berekstensi .conf.  
 - **DevOps:** Mereka adalah penjaga pipeline dan master otomatisasi. Tugasnya menghapus jarak antara developer dan operations sambil memastikan semuanya nggak meledak. Orang yang dituduh sebagai penyelamat, tapi sering diminta deploy dadakan sambil ngemil mie instan. DevOps itu lebih kayak si tukang sulap yang bikin code dari developer jalan mulus sampai production (kadang nggak mulus, tapi yaudah).
 
-**QOTD:** "Kalau server stabil, itu karena doa admin. Kalau crash, itu karena kode developer."  
+**QOTD:** *"Kalau server stabil, itu karena doa admin. Kalau crash, itu karena kode developer."*  
 
 ---
 
@@ -41,7 +41,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 6. **Containerization:**
    - Belajar Docker dulu. Kubernetes nanti kalau mau ngetes batas kesabaranmu (biar nggak nangis duluan).
 
-**QOTD:** "Kalau nggak ngerti `iptables`, kamu hanya tamu di dunia jaringan."  
+**QOTD:** *"Kalau nggak ngerti `iptables`, kamu hanya tamu di dunia jaringan."* 
 
 ---
 
@@ -204,4 +204,4 @@ Haha, nggak boleh nyerah, bos! Coba tips ini:
 
 ---
 
-Semoga hidupmu penuh YAML error yang bisa dijelaskan! Entar juga jadi sombong kalau udah jago! :p
+*Semoga hidupmu penuh YAML error yang bisa dijelaskan! Entar juga jadi sombong kalau udah jago! :p* Ciyaoo
