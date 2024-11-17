@@ -7,7 +7,7 @@ thumbnail: ""
 metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer dan DevOps.
 ---
 # FAQ: Jalan Gila Jadi System Engineer & DevOps – Jadi kamu telah memutuskannya?
-*Di dunia ini, reboot itu solusi, downtime itu seni, dan error log adalah puisi.. :p *   
+*Di dunia ini, reboot itu solusi, downtime itu seni, dan error log adalah puisi.. :p*   
 
 ---
 
@@ -22,7 +22,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 ## **2. Apa yang harus saya pelajari dulu sebagai pemula?**
 **Fundamental yang bikin kamu survive di dunia ini:**
 1. **Linux / FreeBSD:**  
-   - Kuasai command dasar (`grep`, `awk`, `sed`, `systemctl`).
+   - Kuasai command dasar (`grep`, `awk`, `sed`, `systemctl`). Tantang dirimu di [OverTheWire](https://overthewire.org/wargames/bandit/) Bandit hingga sampe level 34
    - Pahami gambaran arsitektur OS. Minimal bisa bedakan `user mode` vs `kernel mode`
    - Pelajari `iptables` biar ngerti kenapa firewall kamu bisa memblokir internetmu sendiri.
    - Kalau bisa nulis script `bash` itu bagus. `Python` itu bonus.
@@ -55,7 +55,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
    - Gunakan Nginx atau HAProxy untuk routing dan load balancing.
    - Tambahkan API Gateway untuk traffic management di layer service proxy. Ada [Kong](https://docs.konghq.com/gateway/latest/), [Traefik](https://traefik.io/), [Istio / Envoy](https://istio.io/) dan [KrakenD](https://www.krakend.io/)
 
-**QOTD:** "Kalau pipeline build gagal, itu kesalahan script. Kalau berhasil? Itu kebetulan."  
+**QOTD:** *"Kalau pipeline build gagal, itu kesalahan script. Kalau berhasil? Itu kebetulan."*  
 
 ---
 
@@ -67,7 +67,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 3. **Distributed Database:**  
    - Gunakan **TiKV** untuk database yang bisa tahan gempa (data).  
 
-**QOTD:** "Database scaling itu kayak MLM. Semakin banyak node, semakin rumit hidupmu."  
+**QOTD:** *"Database scaling itu kayak MLM. Semakin banyak node, semakin rumit hidupmu."* 
 
 ---
 
@@ -81,7 +81,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
    - **ELK Stack (Elasticsearch, Logstash, Kibana)** untuk melacak error yang bikin begadang.
    - **OpenSearch** kalau kamu begadang nggk bisa2 install ELK :p.   
 
-**QOTD:** "Big Data artinya kita punya semua data, tapi tetap nggak tahu apa yang kita cari."  
+**QOTD:** *"Big Data artinya kita punya semua data, tapi tetap nggak tahu apa yang kita cari."*  
 
 ---
 
@@ -95,7 +95,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 4. **OPNSense/PFSense:**
    - Sebagai hiburan kamu bisa jelajahi [OPNSense](https://opnsense.org/) atau [PFSense](https://www.pfsense.org/). Dah paket komplit itu dalemnya! 
 
-**QOTD:** "Kalau jaringan lambat, salah user. Kalau down, salah admin."  
+**QOTD:** *"Kalau jaringan lambat, salah user. Kalau down, salah admin."*  
 
 ---
 
@@ -107,7 +107,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
    - **RabbitMQ:** Cocok untuk tugas kecil.  
    - [**NATS:**](https://nats.io/) Cepat, tapi harus hati-hati kalau skala besar.  
 
-**QOTD:** "Kalau Kafka penuh, itu salah developer. Kalau RabbitMQ crash, itu salah DevOps."  
+**QOTD:** *"Kalau Kafka penuh, itu salah developer. Kalau RabbitMQ crash, itu salah DevOps."*  
 
 ---
 
@@ -119,7 +119,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 3. **Tracing:**  
    - Gunakan [**Jaeger**](https://www.jaegertracing.io/) untuk melacak request antar mikroservis.  
 
-**QOTD:** "Kalau observability gagal, semua jadi Sherlock Holmes di log server."  
+**QOTD:** *"Kalau observability gagal, semua jadi Sherlock Holmes di log server."*  
 
 ---
 
@@ -130,7 +130,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 2. **File Storage:**  
    - **FreeNAS:** Solusi open-source untuk penyimpanan file.  
 
-**QOTD:** "Kalau storage penuh, user bilang hapus log. Kalau log hilang, user bilang cari log."  
+**QOTD:** *"Kalau storage penuh, user bilang hapus log. Kalau log hilang, user bilang cari log."*  
 
 ---
 
@@ -145,7 +145,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 2. **Compliance:**  
    - Pastikan memenuhi standar. Minimal [CIS](https://www.cisecurity.org/cis-benchmarks)  
 
-**QOTD:** "Kalau security diabaikan, server aman. Aman buat diretas."  
+**QOTD:** *"Kalau security diabaikan, server aman. Aman buat diretas.!"*  
 
 ---
 
@@ -159,7 +159,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 3. **Public Cloud:**
    - Belajar AWS, GCP, atau Azure. Kalau cloud gratis habis, balik aja ke baremetal.
 
-**QOTD:** "Kalau Kubernetes crash, reboot. Kalau masih crash, reboot admin."  
+**QOTD:** *"Kalau Kubernetes crash, reboot. Kalau masih crash, reboot admin."*  
 
 ---
 
@@ -171,7 +171,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 - **Monitoring Dasar**: Pasang Grafana + Prometheus buat mantau CPU/RAM, Network, Storage dan Aktivitas Pengguna (siapa yang login dan berapa banyak gagal login.). Terus bikin dashboard yang bikin senior kagum. :p
 - **Otomasi Infrastruktur**: Deploy 3 server/VM sekaligus dengan [Ansible](https://github.com/ansible/awx).
 
-**QOTD:** Kalau server crash, itu salah user. Kalau nggak ada user, itu salah kita..  
+**QOTD:** *Kalau aplikasi crash, salah DevOps. Kalau jalan lancar, developer yang dapat pujian...*  
 
 ---
 ## **13. Pesan Penyemangat untuk Pemula!**
@@ -179,7 +179,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 - Debugging itu perjalanan spiritual, nikmati prosesnya.  
 - Kalau semua gagal, reboot server. Kalau masih gagal, reboot dirimu sendiri.  
 
-**QOTD:** Kalau server crash, itu salah user. Kalau nggak ada user, itu salah kita..  
+**QOTD:** *Jika Linux adalah dewa, maka `man` adalah kitab sucinya. Tapi siapa juga yang baca?*  
 
 ---
 
@@ -190,7 +190,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 - **Theo de Raadt**: Bagaimana kita SSH ke server kalau orang ini nggk lahir?
 - **Marshall Kirk McKusick**: Lewat bukunya `The Design and Implementation of the FreeBSD Operating System`, dia adalah alasan kenapa sistem operasi ini lebih stabil daripada kehidupan DevOps.
 
-**QOTD:** Kalau server crash, itu salah user. Kalau nggak ada user, itu salah kita..  
+**QOTD:** *Kalau server crash, itu salah user. Kalau nggak ada user, itu salah kita..*  
 
 ---
 
@@ -200,7 +200,7 @@ Haha, nggak boleh nyerah, bos! Coba tips ini:
 - **Break sebentar**: Makan indomie dulu, server-nya nggak akan meledak (mungkin).
 - **Tanya komunitas**: Ada Slack, Discord, atau group tele di COCONUT buat curhat (Seniormu banyak yg expert). Ingat, kamu nggak sendirian.
 
-**QOTD:** Di balik setiap sistem yang stabil, ada DevOps yang begadang sambil ngopi.  
+**QOTD:** *Di balik setiap sistem yang stabil, ada DevOps yang begadang sambil ngopi.*  
 
 ---
 
