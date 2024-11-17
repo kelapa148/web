@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://coconut.or.id/people/amar</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://coconut.or.id/people/nurman</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/iful</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://coconut.or.id/people/nurman</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/syarif</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/blog/A-Deep-Dive-into-eBPF-Writing-an-Efficient-DNS-Monitoring</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://coconut.or.id/resources/Machine-Learning-Reference-List</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/resources/Baru-Ingin-Ke-Backend</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://coconut.or.id/resources/Machine-Learning-Reference-List</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/resources/Baru-Ingin-Ke-System</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/resources/lab-logo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/resources/setting-up-users-for-server</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/aldi</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://coconut.or.id/people/iqbalh</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/bayu</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://coconut.or.id/people/iqbalh</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/obo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/ondolz</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/recky</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/seno</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://coconut.or.id/people/wahid</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/xikin</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://coconut.or.id/people/wahid</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/yaomal</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/resources/joining-the-lab</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/akbar</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
