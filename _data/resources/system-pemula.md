@@ -31,7 +31,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
    - Ngerti kenapa ping 127.0.0.1 nggak butuh kabel LAN dan WiFi.
    - Konsep 7 OSI Layer mesti menyatu dengan jiwa (lupakan mantanmu :p).
 3. **Dependency Management:**
-   - Gunakan **Maven** (Java), **npm** (JS), **cargo** (Rust), **cmake** (C++), dan **NuGet** (C#). (Makanya pakai Golang! wkwk)
+   - Gunakan **Maven** (Java), **npm** (JS), **cargo** (Rust), **cmake** (C++), dan **NuGet** (C#), **pip** (Python), **SPM** (Swift), **Gradle** (Android). (Makanya pakai Golang! wkwk)
    - Semua ini bakal bikin hidup lebih mudah. Tapi, kalau salah versi, bersiaplah untuk kehancuran.  
 4. **CI/CD:**
    - Mulai dari Jenkins, GitHub Actions, atau GitLab CI/CD.
@@ -47,7 +47,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 
 ## **3. Gimana cara bikin aplikasi ready untuk production?**
 1. **Build Tools:**  
-   - Gunakan **Maven**, **npm**, atau **cargo** untuk manajemen dependency.  
+   - Build tools adalah senjata rahasia setiap developer untuk mengubah kode menjadi aplikasi nyata, meskipun kadang lebih terlihat seperti "ritual pengorbanan CPU." Di **Java**, ada `Maven` yang terlalu cinta XML, atau `Gradle` yang bikin kamu beli RAM baru hanya untuk tetap lambat. **Go** datang dengan `go build`, secepat kilat kecuali kamu lupa import library. **Rust** punya `cargo`, yang kalau sukses, bikin kamu merasa lebih pintar dari biasanya (padahal hanya hoki). Di **Python**, `setuptools` dan `PyInstaller` terlihat sederhana sampai dependency-mu berubah jadi jaring laba-laba. **C++** dengan `CMake` dan `Make` bikin kamu nulis build script lebih panjang dari aplikasinya. `MSBuild` di **C#** terlihat solid, tapi crash tanpa pesan error adalah bagian dari "misterinya." **Node.js** dengan `npm` dan `yarn` bikin storage kamu penuh dengan node_modules, sementara **Swift** dan `Xcode` adalah alasan kenapa banyak developer Apple sering "meditasi." **Android?** `Gradle` adalah simulator sabar yang bikin kamu nyeduh kopi sambil nunggu build selesai. Build tools, meskipun sering bikin frustrasi, adalah pengingat bahwa keberhasilan aplikasi sering kali lahir dari kekacauan log panjang dan error yang bikin kita tertawa (atau menangis). 😂  
 2. **CI/CD Pipeline:**  
    - Otomasi build dan deploy dengan Jenkins atau GitHub Actions. Kalau capek, pakai Gitlab! 
 3. **Scaling:**  
