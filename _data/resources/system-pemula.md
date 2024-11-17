@@ -188,7 +188,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 - **Brendan Gregg**: Si tukang sulap, alasan Kenapa kamu nonton netflix lancar. 
 - **Vinton Gray Cerf**: Nggk ada dia nggk online kita bro!.
 - **Theo de Raadt**: Bagaimana kita SSH ke server kalau orang ini nggk lahir?
-- **Marshall Kirk McKusick**: Lewat bukunya `The Design and Implementation of the FreeBSD Operating System`, dia adalah alasan kenapa sistem operasi ini lebih stabil daripada kehidupan DevOps.
+- **Marshall Kirk McKusick**: Lewat bukunya [`The Design and Implementation of the FreeBSD Operating System`](https://coconut.or.id/assets/publications/The_Design_and_Implementation_of_the_FreeBSD_Operating_System_2nd%20Edition.pdf), dia adalah alasan kenapa sistem operasi ini lebih stabil daripada kehidupan DevOps.
 
 **QOTD:** *Kalau server crash, itu salah user. Kalau nggak ada user, itu salah kita..*  
 
