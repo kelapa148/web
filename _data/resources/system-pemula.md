@@ -1,3 +1,11 @@
+---
+template: BlogPost
+path: /resources/Baru-Ingin-Ke-System
+date: 2022-07-12T07:08:53.137Z
+title: Aku "Engineer" Aku Niscaya
+thumbnail: ""
+metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer dan DevOps.
+---
 # FAQ: Jalan Gila Jadi System Engineer & DevOps – Jadi kamu telah memutuskannya?
 *Di dunia ini, reboot itu solusi, downtime itu seni, dan error log adalah puisi.. :p *   
 
