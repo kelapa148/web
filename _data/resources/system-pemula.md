@@ -25,7 +25,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
    - Kuasai command dasar (`grep`, `awk`, `sed`, `systemctl`). Tantang dirimu di [OverTheWire](https://overthewire.org/wargames/bandit/) Bandit hingga sampe level 34
    - Pahami gambaran arsitektur OS. Minimal bisa bedakan `user mode` vs `kernel mode`
    - Pelajari `iptables` biar ngerti kenapa firewall kamu bisa memblokir internetmu sendiri.
-   - Kalau bisa nulis script `bash` itu bagus. `Python` itu bonus.
+   - Kalau bisa nulis script `bash` itu bagus. `Python` itu bonus. Dan bahasa `C` itu anugerah yang berlimpah
 2. **Networking:**  
    - Ngerti DNS, TCP/IP, dan HTTP. Kalau nggak tahu, coba googling "Kenapa internet mati."
    - Ngerti kenapa ping 127.0.0.1 nggak butuh kabel LAN dan WiFi.
@@ -115,7 +115,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 1. **Metrics:**  
    - **Prometheus dan Grafana** untuk monitoring server dan aplikasi.  
 2. **Logs:**  
-   - **ELK Stack** untuk analisis log. Kalau nggak cukup, tambahkan **Loki**.  
+   - **ELK Stack** untuk analisis log. Kalau nggak cukup, tambahkan **Grafana Loki**.  
 3. **Tracing:**  
    - Gunakan [**Jaeger**](https://www.jaegertracing.io/) untuk melacak request antar mikroservis.  
 
@@ -126,7 +126,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 ## **9. Bagaimana tentang storage?**
 1. **Clustered Storage:**  
    - [**CEPH:**](https://ceph.io/en/) Untuk penyimpanan terdistribusi besar.  
-   - **Longhorn:** Cocok untuk Kubernetes.  
+   - [**Longhorn:**](https://longhorn.io/) Cocok untuk Kubernetes.  
 2. **File Storage:**  
    - **FreeNAS:** Solusi open-source untuk penyimpanan file.  
 
