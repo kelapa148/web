@@ -104,7 +104,7 @@ Coba dulu aja! Kalau kamu suka merasa seru pas nulis kode yang bisa "ngomong" ke
 ### **10. Pesan penyemangat buat yang lagi down?**
 - Error? Bagus! Itu tandanya kamu belajar sesuatu yang baru.
 - Ingat, semua developer profesional juga pernah bingung kayak kamu. Bedanya, mereka nggak nyerah.
-- "Every great developer you know started out as a beginner." — *Ada Lovelace* (oke ini quote motivasi 😅).
+- "Every great developer you know started out as a beginner." — [*Ada Lovelace*](https://id.wikipedia.org/wiki/Ada_Lovelace) (oke ini quote motivasi 😅).
 
 ---
 
