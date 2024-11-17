@@ -52,7 +52,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
    - Otomasi build dan deploy dengan Jenkins atau GitHub Actions. Kalau capek, pakai Gitlab! 
 3. **Scaling:**  
    - Tambahkan Kubernetes untuk orkestrasi container.
-   - Gunakan Nginx atau HAProxy untuk routing dan load balancing.
+   - Gunakan Nginx atau [HAProxy](https://www.haproxy.org/) untuk routing dan load balancing.
    - Tambahkan API Gateway untuk traffic management di layer service proxy. Ada [Kong](https://docs.konghq.com/gateway/latest/), [Traefik](https://traefik.io/), [Istio / Envoy](https://istio.io/) dan [KrakenD](https://www.krakend.io/)
 
 **QOTD:** *"Kalau pipeline build gagal, itu kesalahan script. Kalau berhasil? Itu kebetulan."*  
