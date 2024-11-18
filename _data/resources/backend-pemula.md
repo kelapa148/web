@@ -74,13 +74,13 @@ Latihan menyediakan fungsi pendaftaran dan otorisasi pengguna, sehingga backend 
 - **Logika (Business Logic):**
 Bikin logika utama dari aplikasi server. Contohnya membuat konten halaman (rendering atau hasilkan halaman json), mengelola keranjang belanja, memproses pesan atau tugas lainnya sesuai dengan kebutuhan aplikasi. *Dia mikir buat semua hal: nge-update keranjang belanja, balas pesan, sampai nyiapin halaman data web yang kamu lihat.* Paham?
 - **Penyimpanan (Storage):**
-Latihan menghubungkan ke basis data (baik lokal maupun jarak jauh), termasuk membaca, menulis, menyortir, dan memanipulasi data sesuai kebutuhan aplikasi. *Nyimpen semua data dengan rapi, siap dipakai kapan aja (asal nggak hilang).*
+Latihan menghubungkan ke basis data (baik lokal filesystem servermu maupun jarak jauh misal seperti `AWS S3`), termasuk membaca, menulis, menyortir, dan memanipulasi data sesuai kebutuhan aplikasi. *Nyimpen semua data dengan rapi, siap dipakai kapan aja (asal nggak hilang).*
 - **Pembayaran (Payments):**
 Belajar memproses transaksi keuangan, seperti pembayaran pengguna, dengan memastikan keamanan dan keandalan proses tersebut. *"Mau bayar? Aman, gw handle."* Tapi jangan lupa, dia bakal potong komisi.
 - **Ekstensi (Extensions):**
-Buat agar mendukung perangkat lunak pihak ketiga (seperti pustaka atau framework tambahan) untuk berinteraksi dengan perangkat eksternal seperti ponsel, komputer, server, dan lainnya. Kerja bareng aplikasi lain buat ngurus services kamu. Intinya, dia fleksibel.
+Buat agar mendukung perangkat lunak pihak ketiga (seperti pustaka atau framework tambahan) untuk berinteraksi dengan perangkat eksternal seperti ponsel, komputer, server, dan lainnya. Contohnya library SMTP buat ngirim email atau SMS dan WA, push notification dan lain2. *Kerja bareng aplikasi lain buat ngurus services kamu. Intinya, dia fleksibel.*
 - **Mikroservis (Microservices):**
-Berkomunikasi dengan aplikasi jarak jauh (misalnya, mikroservis lainnya) menggunakan REST API untuk menjalankan fungsi tertentu secara terpisah. *Kalau ada kerjaan tambahan, dia lempar ke backend sebelah buat dibantuin.*
+Berkomunikasi dengan aplikasi jarak jauh (misalnya, mikroservis lainnya) menggunakan REST API untuk menjalankan fungsi tertentu secara terpisah. *Kalau ada kerjaan tambahan, dia lempar ke backend sebelah buat dibantuin. Misal loe perlu data negara, provinsi, kabupaten, kecamatan sampai urusan query kode pos*
 - **Event-driven:**
 Event-driven itu konsep di mana server kayak jadi pengatur pesta yang sibuk mengatur siapa bicara, siapa mendengar, dan kapan semua itu terjadi. Bukan cuma bikin aplikasi lebih responsif, tapi juga ngajarin server buat multitasking kayak pro. Kalau backend developer belajar integrasi dengan `RabbitMQ`, `Kafka`, `NATS`, atau `Redis`, itu ibarat latihan mengatur pesta yang tamunya sibuk ngirim gosip ke semua orang.
 
