@@ -77,9 +77,10 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 2. **Processing:**  
    - Gunakan **Apache Spark** untuk analisis real-time.
    - Kamu bisa pakai [Redash](https://redash.io/) untuk konek ke semua DBmu.
-3. **Log Management:**  
-   - **ELK Stack (Elasticsearch, Logstash, Kibana)** untuk melacak error yang bikin begadang.
-   - **OpenSearch** kalau kamu begadang nggk bisa2 install ELK :p.   
+3. **Analytic and Log Management:**  
+   - **ELK Stack (Elasticsearch, Logstash, Kibana)** untuk data analisis, visualisasi, termasuk melacak error yang bikin begadang.
+   - **OpenSearch** kalau kamu begadang nggk bisa2 install ELK :p.
+   - Jangan lupa belajar MLOps kalau udah punya data! 
 
 **QOTD:** *"Big Data artinya kita punya semua data, tapi tetap nggak tahu apa yang kita cari."*  
 
@@ -117,7 +118,7 @@ metaDescription: Panduan bagi yang baru akan mulai cemplung ke System Engineer d
 2. **Logs:**  
    - **ELK Stack** untuk analisis log. Kalau nggak cukup, tambahkan **Grafana Loki**.  
 3. **Tracing:**  
-   - Gunakan [**Jaeger**](https://www.jaegertracing.io/) untuk melacak request antar mikroservis.  
+   - Gunakan [**Jaeger**](https://www.jaegertracing.io/), opentelemetry, [**sentry**](https://sentry.io/) untuk melacak request antar mikroservis.  
 
 **QOTD:** *"Kalau observability gagal, semua jadi Sherlock Holmes di log server."*  
 
