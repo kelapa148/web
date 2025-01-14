@@ -10,6 +10,6 @@ metaDescription: Undergraduate student
 order: 4
 ---
 
-Iful is a informatics engineering major at Muhammadiyah University of Makassar, Makassar. He worked on the organization of The Twelfth Edition of the COCONUT computer club.
+Iful is a informatics engineering major at Muhammadiyah University of Makassar (UNISMUH). He worked on the organization of The Twelfth Edition of the COCONUT Computer Club.
 
-Nurman focuses on blockchain research, especially web3. he has an interest in the frontend field by collaborating continuously
+Iful focuses on blockchain research, especially web3. he has an interest in the frontend field by collaborating continuously
