@@ -16,7 +16,7 @@ Nur runs the research group COCONUT at the Department of Computer Engineering, S
 
 ## Positions and previous work
 
-- System & Technology Architect [OCBC](https://ocbc.id/)
+- System & Technology Architect [Undisclosed Company](#)
 - IT Security Manager [Bukalapak.com](https://bukalapak.com/) 2019
 - Fraud Management Expert [XL Axiata](https://www.xl.co.id/) 2018
 - Senior Security Engineer [OVO](https://ovo.id/)
