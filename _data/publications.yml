@@ -1,22 +1,31 @@
-
-- title: "Development of Human Resources in Android-based Information System for People with Social Welfare Problems"
-  authors: A Arman, A Alang, Y Malago
-  journal: Indonesian Journal of Law and Economics Review
-  url: https://ijler.umsida.ac.id/index.php/ijler/article/view/689/701
-  year: 2020
+- title: "FairWave : A Fairness-Aware Asynchronous DAG-BFT Consensus"
+  authors: Syariful Mujaddiq
+  journal: Distributed, Parallel, and Cluster Computing (cs.DC)
+  url: https://doi.org/10.48550/arXiv.2606.10982
+  year: 2026
+- title: "HI-XDR: Hybrid Intelligent Framework for Adversarial-Resilient Anomaly Detection and Adaptive Cyber Response"
+  authors: Wahid, A.R.
+  journal: Journal of Cyber Security, 7(1), 589–614. 
+  url: https://doi.org/10.32604/jcs.2025.071622
+  year: 2025
 - title: "Stochastic recognition of Human daily activities via Hybrid Descriptors and Random Forest using Wearable sensors"
   authors: N Halim.
   journal: ScienceDirect (Array)
   url: https://doi.org/10.1016/j.array.2022.100190
   year: 2022
   pdf: /assets/publications/halim-array2022.pdf
-- title: "Location-Based Mobile Augmented Reality Development For Searching Tourism Place In Ambon Island"
-  authors: Yusuf Yacob Ona Ola.
-  journal: UAJY
-  url: http://e-journal.uajy.ac.id/9863/
-  year: 2016
 - title: "Intelligent Human Anomaly Identification and Classification in Crowded Scenes via Multi-fused Features and Restricted Boltzmann Machines"
   authors: N Halim.
   journal: TechRxiv
   url: https://doi.org/10.36227/techrxiv.21215069.v1
   year: 2022
+- title: "Development of Human Resources in Android-based Information System for People with Social Welfare Problems"
+  authors: A Arman, A Alang, Y Malago
+  journal: Indonesian Journal of Law and Economics Review
+  url: https://ijler.umsida.ac.id/index.php/ijler/article/view/689/701
+  year: 2020
+- title: "Location-Based Mobile Augmented Reality Development For Searching Tourism Place In Ambon Island"
+  authors: Yusuf Yacob Ona Ola.
+  journal: UAJY
+  url: http://e-journal.uajy.ac.id/9863/
+  year: 2016
