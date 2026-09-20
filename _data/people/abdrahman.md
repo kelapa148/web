@@ -9,7 +9,7 @@ metaDescription: Cybersecurity & AI Enthusiast
 order: 11
 ---
 
-Abd Rahman Wahid is a cybersecurity and AI enthusiast based in Bandung, West Java. He explores the intersection of artificial intelligence and cybersecurity, from machine learning concepts such as supervised and unsupervised learning to Transformers, and security skills covering network analysis (IDS/IPS, Wireshark, tcpdump), secure coding practices, application security, and reverse engineering.
+Abd Rahman Wahid is a cybersecurity and AI enthusiast based in Bandung, West Java. He is currently pursuing a Master of Cyber Security at Telkom University. He explores the intersection of artificial intelligence and cybersecurity, from machine learning concepts such as supervised and unsupervised learning to Transformers, and security skills covering network analysis (IDS/IPS, Wireshark, tcpdump), secure coding practices, application security, and reverse engineering.
 
 He led the COCONUT bootcamp "Bootcamp Offensive Security: Man Behind The Hat, Mastering Offensive OPSEC", covering reconnaissance, web exploitation, and post-exploitation techniques.
 
