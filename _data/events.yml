@@ -11,9 +11,11 @@
     [Ir. Budi Rahardjo, M.Sc., Ph.D](https://id.wikipedia.org/wiki/Budi_Raharjo_%28akademisi%29).
     The panel discussion "Ransomware as a Service: Watch Out!" was moderated
     by [Nurkholish Halim](https://coconut.or.id/people/nhalim), S.SI, M.A,
-    CEH, CHFI, CISA (IDSECCONF Committee), with panelists Atik Pilihanto, S.T,
-    GPEN, GCIH, GCIA (Security Director ITSEC Asia); Dr. Eng. Ir. Abdul Wahid,
-    M.Kom., IPM. CSCU, CHFI (Peneliti Keamanan IT & Kriptografi UNM); David
+    CEH, CHFI, CISA (IDSECCONF Committee), with panelists
+    [Atik Pilihanto](https://www.linkedin.com/in/don-anto/), S.T, GPEN, GCIH,
+    GCIA (Security Director ITSEC Asia); Dr. Eng.
+    [Ir. Abdul Wahid, M.Kom](https://scholar.google.com/citations?user=TkADbB8AAAAJ&hl=id),
+    IPM. CSCU, CHFI (Peneliti Keamanan IT & Kriptografi UNM); David
     Christian (OSINT Researcher, GreyInt); and Muhammad Resha (Komunitas
     Android Makassar).
 - title: "COCONUT Open Class Batch 8 - Go REST, Go Fast: Membangun REST API dengan Golang"
@@ -33,19 +35,21 @@
   description: >-
     A Coconut Open Class (COC) session on the basics of website development
     using SvelteKit, a modern MIT-licensed framework for faster and lighter
-    web development, presented by Awaluddin. Part of COCONUT's regular open
-    class series focused on building IT skills, the session targeted IT
-    students as well as high school (SMA/SMK) students and was open to the
-    general public.
+    web development, presented by
+    [Awaluddin](https://coconut.or.id/people/nurman). Part of COCONUT's
+    regular open class series focused on building IT skills, the session
+    targeted IT students as well as high school (SMA/SMK) students and was
+    open to the general public.
 - title: "Blockchain Demystified - The Technology Behind the Digital Revolution"
   year: 2024
   date: "October 12, 2024"
   venue: "Sekretariat Coconut Computer Club, Jl. Mon. Emmy Saelan III No. 70 Karunrung"
   description: >-
-    A seminar presented by Syariful Mujaddiq exploring blockchain and the
-    technology behind the digital revolution. Held from 08.30 to 11.05 WITA,
-    participants gained useful knowledge, networking opportunities, and a
-    certificate.
+    A seminar presented by
+    [Syariful Mujaddiq](https://coconut.or.id/people/iful) exploring
+    blockchain and the technology behind the digital revolution. Held from
+    08.30 to 11.05 WITA, participants gained useful knowledge, networking
+    opportunities, and a certificate.
 - title: "COCONUT Alumni Meetup - What! You Need to Know Before Becoming an Engineer"
   year: 2019
   date: "December 21, 2019"
@@ -73,11 +77,14 @@
   description: >-
     A 20-hour open-source information security seminar organized by COCONUT
     Computer Club, featuring "Teknologi Sistem Operasi Open Source dari Masa
-    ke Masa" by Tasrif Hasanuddin, ST, M.Cs; "Keamanan Teknologi Informasi
-    Dampak dan Ancaman Bagi NKRI" by Kolonel Arh Syarif Hidayatullah;
-    "Pentester Diary: Journey to Become UID (Linux Hacking)" by Ahmad Muammar
-    W.K, OSCP, OSCE; and "Fun with ELF: Reverse-Engineering On *nix Machine"
-    by [Nurkholish Halim](https://coconut.or.id/people/nhalim).
+    ke Masa" by
+    [Tasrif Hasanuddin, ST, M.Cs](https://fikom.umi.ac.id/tasrif-hasanuddin/);
+    "Keamanan Teknologi Informasi Dampak dan Ancaman Bagi NKRI" by Kolonel
+    Arh Syarif Hidayatullah; "Pentester Diary: Journey to Become UID (Linux
+    Hacking)" by
+    [Ahmad Muammar W.K](https://seclab.id/profile-ammar), OSCP, OSCE; and
+    "Fun with ELF: Reverse-Engineering On *nix Machine" by
+    [Nurkholish Halim](https://coconut.or.id/people/nhalim).
 - title: "Seminar & Workshop - Building Websites Easily Using Various CMS"
   year: 2010
   date: "June 19, 2010"
@@ -113,8 +120,9 @@
     by STMIK Profesional Makassar with The MagPi as media partner. The session
     covered an introduction to Raspberry Pi, programming with Python, GPIO
     interfacing, and Raspbian installation, opened with a talk on
-    microcontroller technology by Tasrif Hasanuddin, ST, M.Cs, and hands-on
-    training by Ucog Sinaga, S.Kom and
+    microcontroller technology by
+    [Tasrif Hasanuddin, ST, M.Cs](https://fikom.umi.ac.id/tasrif-hasanuddin/),
+    and hands-on training by Ucog Sinaga, S.Kom and
     [Nurkholish Halim](https://coconut.or.id/people/nhalim), S.SI.
 - title: "SCAN TO COMPILE 01 - New Member Recruitment + PC Assembly Workshop"
   year: 2008
