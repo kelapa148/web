@@ -40,6 +40,18 @@
   date: "2014"
   venue: "Kampus 1 STMIK Profesional, Makassar"
   description: "A 20-hour open-source information security seminar organized by COCONUT Computer Club, featuring \"Teknologi Sistem Operasi Open Source dari Masa ke Masa\" by Tasrif Hasanuddin, ST, M.Cs; \"Keamanan Teknologi Informasi Dampak dan Ancaman Bagi NKRI\" by Kolonel Arh Syarif Hidayatullah; \"Pentester Diary: Journey to Become UID (Linux Hacking)\" by Ahmad Muammar W.K, OSCP, OSCE; and \"Fun with ELF: Reverse-Engineering On *nix Machine\" by Nurkholish Halim."
+- title: "Seminar & Workshop Membuat Website Dengan Mudah Menggunakan Berbagai CMS"
+  year: 2010
+  date: "June 19, 2010"
+  venue: "STMIK Profesional, Makassar"
+  description: >-
+    A seminar and workshop on building websites easily using various CMS such
+    as Joomla, Drupal, vBulletin, and phpBB, presented by Nurkholish Halim and
+    Yusuf Yacob Onaola. Topics covered web design basics (HTML), CMS
+    installation, building websites and community forums, installing
+    templates, modules, components, and plugins, plus an introduction to web
+    security. Participants received a certificate, a CD containing CMS
+    packages and templates, snacks, and workshop modules.
 - title: "IDSECCONF 2012 - Konferensi Keamanan Komputer Nasional V"
   year: 2012
   date: "June 9-10, 2012"
@@ -56,4 +68,12 @@
     interfacing, and Raspbian installation, opened with a talk on
     microcontroller technology by Tasrif Hasanuddin, ST, M.Cs, and hands-on
     training by Ucog Sinaga, S.Kom and Nurkholish Halim, S.SI.
+- title: "SCAN TO COMPILE 01 - Penerimaan Calon Anggota Baru + Workshop Merakit PC"
+  year: 2008
+  date: "October 25-27, 2008"
+  venue: "Kampus AMIK Profesional Makassar"
+  description: >-
+    COCONUT Computer Club's first event: a new member recruitment combined
+    with a PC assembly workshop, held for all students of AMIK Profesional
+    Makassar.
 
