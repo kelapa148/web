@@ -49,7 +49,6 @@ export const pageQuery = graphql`
           date
           venue
           description
-          url
         }
       }
     }
