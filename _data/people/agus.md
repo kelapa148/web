@@ -11,6 +11,8 @@ order: 14
 
 Agus Kurniawan is a back-end engineer at DOKU, working in the Financial Core team. He develops and maintains backend systems with a focus on financial transactions, bug fixing, and system reliability, collaborating closely with the QA team to ensure high-quality releases and smooth system performance.
 
+He graduated from STMIK Profesional in 2021 and briefly served as chairman of COCONUT Computer Club in 2020.
+
 ## More information
 
 You can find more information on his [LinkedIn](https://www.linkedin.com/in/agus-kurniawan-290974236/) and his GitHub [@geetoor-maven](https://github.com/geetoor-maven).

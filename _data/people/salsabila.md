@@ -9,7 +9,7 @@ metaDescription: AI & Machine Learning Enthusiast
 order: 13
 ---
 
-Salsabila Putri is a computer engineering graduate based in Makassar, South Sulawesi, with a focus on artificial intelligence, machine learning, and data-driven systems. She has hands-on experience through AI-related projects and has worked as a teaching assistant for courses in Information Retrieval, Natural Language Processing, Big Data, and Database Systems. She was a participant of the Bangkit 2024 program.
+Salsabila Putri is a computer engineering graduate based in Makassar, South Sulawesi, with a focus on artificial intelligence, machine learning, and data-driven systems. She holds a Bachelor of Computer Engineering from Universitas Negeri Makassar, graduating in 2026. She has hands-on experience through AI-related projects and has worked as a teaching assistant for courses in Information Retrieval, Natural Language Processing, Big Data, and Database Systems. She was a participant of the Bangkit 2024 program.
 
 ## More information
 

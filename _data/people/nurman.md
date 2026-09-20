@@ -4,7 +4,7 @@ path: /people/nurman
 date: 2022-09-24T06:15:50.738Z
 title: Nurman Awaluddin
 thumbnail: /assets/people/nurman.png
-position: active
+position: alumni
 endYear: 2023
 metaDescription: Undergraduate student
 order: 3
