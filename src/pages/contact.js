@@ -13,6 +13,7 @@ const RequiredWarning = ({ fieldName }) => {
 const ContactPage = ({ data: { site } }) => {
   const [submitted, setSubmitted] = useState(false);
   const [isSending, setIsSending] = useState(false);
+  const [sendError, setSendError] = useState("");
 
   const [formError, setFormError] = useState([]);
   
@@ -91,6 +92,9 @@ const ContactPage = ({ data: { site } }) => {
                 message: formdata.get("w3lMessage"),
               };
 
+              setSendError("");
+              setIsSending(false);
+
               // check required fields
               let checkedFields = [];
 
@@ -123,6 +127,14 @@ const ContactPage = ({ data: { site } }) => {
                     },
                     (rej) => {
                       console.log("failed with result:", rej);
+                      console.log("failed detail:", JSON.stringify(rej, null, 2));
+                      let msg = "Something went wrong. Please email us directly at surat [AT] coconut.or.id";
+                      if (rej && typeof rej === "object") {
+                        const detail = rej.text || rej.message || rej.error || "";
+                        if (detail) msg = "Failed: " + detail;
+                      }
+                      setSendError(msg);
+                      setIsSending(false);
                     }
                   );
               }
@@ -135,6 +147,21 @@ const ContactPage = ({ data: { site } }) => {
               </p>
             ) : (
               <>
+                {sendError && (
+                  <p
+                    style={{
+                      margin: "0 0 1rem",
+                      padding: "10px 12px",
+                      background: "#ff45421a",
+                      border: "1px solid #ff4542",
+                      borderRadius: "6px",
+                      color: "#ff4542",
+                      fontSize: "0.9rem",
+                    }}
+                  >
+                    {sendError}
+                  </p>
+                )}
                 <div>
                   <label htmlFor="w3lName">
                     Name{" "}
