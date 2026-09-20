@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import Navigation from "../components/navigation";
+import SocialLinks from "../components/social-links";
 
 export default ({ children }) => {
   const data = useStaticQuery(
@@ -32,6 +33,7 @@ export default ({ children }) => {
           </span>
           &nbsp; by <a href="https://github.com/kelapa148">kelapa148</a>
         </p>
+        <SocialLinks />
       </footer>
     </div>
   );

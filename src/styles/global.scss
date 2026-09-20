@@ -276,11 +276,35 @@ a {
   color: var(--text-secondary-color);
 }
 .site-footer {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
   margin: 90px 0 16px;
   color: #666;
   a {
     font-weight: 700;
+  }
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    a {
+      display: inline-flex;
+      align-items: center;
+      color: #888;
+      font-weight: 400;
+      &:hover {
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+      svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+      }
+    }
   }
 }
 .form-container {
