@@ -35,6 +35,15 @@
   color: var(--text-secondary-color);
   margin-bottom: 0.5rem;
 }
+.event-venue {
+  white-space: nowrap;
+  .event-pin {
+    width: 13px;
+    height: 13px;
+    vertical-align: -2px;
+    margin-right: 3px;
+  }
+}
 .event-description {
   margin-bottom: 0;
   color: var(--text-secondary-color);

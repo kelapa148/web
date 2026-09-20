@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import Navigation from "../components/navigation";
 import SocialLinks from "../components/social-links";
 
 export default ({ children }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
   const data = useStaticQuery(
     graphql`
       query {
@@ -18,10 +19,20 @@ export default ({ children }) => {
 
   return (
     <div className="site-wrapper">
-      <header className="site-header">
+      <header className={"site-header" + (menuOpen ? " menu-open" : "")}>
         <div className="site-title">
           <Link to="/">#COCONUT</Link>
         </div>
+        <button
+          className={"hamburger" + (menuOpen ? " open" : "")}
+          aria-label="Menu"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
         <Navigation />
       </header>
       {children}
