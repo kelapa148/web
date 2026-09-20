@@ -8,6 +8,16 @@
   date: "October 20, 2025"
   venue: "IndigoHub Makassar, Sulawesi Selatan"
   description: "In collaboration with Indigo Telkom Indonesia, COCONUT Computer Club held Open Class Batch 8, a hands-on backend REST API training using the Go programming language that also introduced Apilogy, Telkom Indonesia's API marketplace. The class was led by Musdalipa and Syahrul Ramadhan with Ahmad Fajrul as moderator, and attended by more than 20 students and young developers from Makassar."
+- title: "Coconut Open Class - Belajar Dasar Website dengan SvelteKit"
+  year: 2024
+  date: "October 11, 2024"
+  description: >-
+    A Coconut Open Class (COC) session on the basics of website development
+    using SvelteKit, a modern MIT-licensed framework for faster and lighter
+    web development, presented by Awaluddin. Part of COCONUT's regular open
+    class series focused on building IT skills, the session targeted IT
+    students as well as high school (SMA/SMK) students and was open to the
+    general public.
 - title: "COCONUT Alumni Meetup - What! You Need to Know Before Becoming an Engineer"
   year: 2019
   date: "December 21, 2019"
