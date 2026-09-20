@@ -1,3 +1,52 @@
+- title: "COCONUT Open Class Batch 10 - Building Modern Data Flow with TanStack Query v5"
+  year: 2026
+  date: "June 5, 2026"
+  venue: "Rumah BUMN Makassar"
+  description: >-
+    COCONUT Open Class Batch 10, an open learning space for students to dive
+    into modern data management technology. Themed "Building Modern Data Flow
+    with TanStack Query v5", the session covered efficient server-state
+    management, caching techniques, and professional-grade data fetching using
+    the latest TanStack Query. The class was presented by frontend developers
+    Saudah AI and Naufal Asila, with Muh. Tazkiyah as moderator.
+- title: "YOLO vs DETR: Who Leads the Next Generation of System Detection?"
+  year: 2026
+  date: "June 5-7, 2026"
+  venue: "Online via Google Meet"
+  description: >-
+    An intensive three-day computer vision bootcamp exploring the two pillars
+    of modern object detection, as Transformer-based models challenge the
+    long-standing dominance of CNNs. Day 1 covered algorithm architecture
+    foundations and structured dataset management; Day 2 compared the
+    computational efficiency and practical implementation of YOLO against
+    DETR; and Day 3 was dedicated to building an independent final project.
+    The bootcamp was presented by Resky Agus (AI enthusiast / R&D, PT Maxplus
+    Anugrah Indonesia) and moderated by Muhammad Shadiq Yusuf (COCONUT
+    Bandung Chapter, Telkom University).
+- title: "Bootcamp Offensive Security - Man Behind The Hat, Mastering Offensive OPSEC"
+  year: 2026
+  date: "March 6, 8, 10, 2026"
+  venue: "Live via Google Meet"
+  description: >-
+    An intensive cybersecurity bootcamp taking participants from the basics
+    toward professional practice, structured around Offensive OPSEC
+    techniques. Day 1 covered the Art of Reconnaissance (passive & active
+    gathering), Day 2 explored Web Invasion (exploiting the web layer), and
+    Day 3 focused on Post-Exploitation (privilege escalation & persistence).
+    The bootcamp was led by Abd Rahman Wahid, Cybersecurity & AI Enthusiast,
+    running from 13.00 to 17.00 WITA.
+- title: "INESA 2026 - Smart Farming with AgroAdvisor for Desa Rajang"
+  year: 2026
+  date: "2026"
+  venue: "Desa Rajang, Kecamatan Lembang, Kabupaten Pinrang, Sulawesi Selatan"
+  description: >-
+    COCONUT took part in INESA 2026 (Inovasi dan Edukasi Desa) in Desa
+    Rajang, Pinrang Regency, implementing AgroAdvisor, a smart farming
+    platform powered by IoT and AI. The system provides real-time monitoring
+    of soil conditions (pH, NPK, temperature, humidity), AI-based fertilizer
+    and pesticide recommendations, automatic irrigation pump control, and a
+    digital dashboard, helping local farmers transition from conventional to
+    data-driven agriculture.
 - title: "IDSECCONF 2025 - Indonesia IT Security Conference"
   year: 2025
   date: "November 8-9, 2025"
