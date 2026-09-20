@@ -39,15 +39,15 @@ const PeoplePage = ({
     <Layout>
       <HelmetWrapper title="People" />
       <h1>People</h1>
-      <div className="grids small" style={{ marginBottom: "32px" }}>
+      <div className="grids small people-grids" style={{ marginBottom: "32px" }}>
         {currentPeople}
       </div>
       <h2>Active Members</h2>
-      <div className="grids small" style={{ marginBottom: "32px" }}>
+      <div className="grids small people-grids" style={{ marginBottom: "32px" }}>
         {activePeople}
       </div>
       <h2>Previous lab members</h2>
-      <div className="grids small" style={{ marginBottom: "32px" }}>
+      <div className="grids small people-grids" style={{ marginBottom: "32px" }}>
         {prevPeople}
       </div>
     </Layout>
