@@ -3,16 +3,20 @@ template: BlogPost
 path: /people/wahid
 date: 2022-02-01T06:15:50.738Z
 title: Abdul Wahid
-thumbnail: /assets/people/wahid.jpg
+thumbnail: /assets/people/wahid.png
 position: active
 endYear: 2021
 metaDescription: Undergraduate student
 order: 8
 ---
 
-Wahid is a senior Information System major at STMIK Prefesional College, Makassar. He worked on the organization of the tenth edition of the coconut computer club.
+Wahid is a senior Information System major at STMIK Prefesional College, Makassar. He worked on the organization of the tenth edition of the coconut computer club. He holds the Fortinet Certified Associate in Cybersecurity certification.
 
 In addition, he started looking at the overall effect of one-on-one algorithmic matching on collaboration at scientific conferences.
 Him main interest area is applications of React in computational social science. He would like to continue researching how backend and data analysis can tackle social issues.
 
 Update / April 2024: Currently works as a security engineer at PT Datacomm Diangraha
+
+## More information
+
+You can find more information on his [LinkedIn](https://www.linkedin.com/in/abdul-wahid-944169258/).
