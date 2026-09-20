@@ -36,8 +36,10 @@ const ContactPage = ({ data: { site } }) => {
           </div>
           <div className="primary-content">
             <b>Undergraduate students: </b>
-            Please contact Obo to arrange a short meeting to discuss about
-            research and/or potential projects.
+            Please contact{" "}
+            <a href="https://coconut.or.id/people/abdrahman">Maman</a> to
+            arrange a short meeting to discuss about research and/or potential
+            projects.
           </div>
           <div className="primary-content">
             <b>Graduate students: </b>
@@ -46,20 +48,32 @@ const ContactPage = ({ data: { site } }) => {
             please send a CV with a brief research interest. Then you can
             arrange a discussion before applying. You can potentially apply to
             the Department of Information System at STMIK Profesional Makassar,
-            Dipanegara University (UNDIPA), or
-            Muhammadiyah University Of Makassar, Indonesia, where I can co-advise. There are
+            Telkom University (Bandung), or
+            Muhammadiyah University Of Makassar, Indonesia, where COCONUT members can co-advise. There are
             multiple options if you are interested.
           </div>
           <div className="primary-content">
-            <b>Other positions: </b>I always actively look for interns and
+            <b>Other positions: </b>We always actively look for interns and
             developers. If you are interested in doing internship (locally or
             remotely) or other positions such as developers, please also do not
             hesitate to email us to discuss.
           </div>
           <div className="primary-content">
-            <b>Office: </b>
-            Jl. Mon. Emmy Saelan III, 2rd Floor, Makassar City, 
-            Sulawesi Selatan, Indonesia 90221.
+            <b>Basecamp: </b>
+            <ul>
+              <li>
+                Makassar: Jl. Mon. Emmy Saelan III, 2rd Floor, Makassar City,
+                Sulawesi Selatan, Indonesia 90221.
+              </li>
+              <li>
+                Bandung: Jalan Dago Pakar Mawar 1, Mekarsaluyu, Kabupaten
+                Bandung.
+              </li>
+              <li>
+                Jakarta: Jalan Warung Jati Timur I, Pejaten, Kecamatan
+                Pancoran, Jakarta Selatan.
+              </li>
+            </ul>
           </div>
         </div>
         <div>
