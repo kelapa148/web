@@ -2,12 +2,31 @@
   year: 2025
   date: "November 8-9, 2025"
   venue: "Ballroom Menara Pinisi, Gedung Phinisi, Universitas Negeri Makassar (UNM), Makassar"
-  description: "COCONUT hosted IDSECCONF 2025, the annual Indonesia IT Security Conference, held in Makassar under the theme \"Cybersecurity for the Next Evolution: Society 6.0\". The event featured two days of seminars, panel discussions, pre-conference workshops (November 6-7) and a Capture The Flag (CTF) competition, opened with a keynote by Ir. Budi Rahardjo, M.Sc., Ph.D."
+  description: >-
+    COCONUT hosted IDSECCONF 2025, the annual Indonesia IT Security
+    Conference, held in Makassar under the theme "Cybersecurity for the Next
+    Evolution: Society 6.0". The event featured two days of seminars, panel
+    discussions, pre-conference workshops (November 6-7) and a Capture The
+    Flag (CTF) competition, opened with a keynote by
+    [Ir. Budi Rahardjo, M.Sc., Ph.D](https://id.wikipedia.org/wiki/Budi_Raharjo_%28akademisi%29).
+    The panel discussion "Ransomware as a Service: Watch Out!" was moderated
+    by [Nurkholish Halim](https://coconut.or.id/people/nhalim), S.SI, M.A,
+    CEH, CHFI, CISA (IDSECCONF Committee), with panelists Atik Pilihanto, S.T,
+    GPEN, GCIH, GCIA (Security Director ITSEC Asia); Dr. Eng. Ir. Abdul Wahid,
+    M.Kom., IPM. CSCU, CHFI (Peneliti Keamanan IT & Kriptografi UNM); David
+    Christian (OSINT Researcher, GreyInt); and Muhammad Resha (Komunitas
+    Android Makassar).
 - title: "COCONUT Open Class Batch 8 - Go REST, Go Fast: Membangun REST API dengan Golang"
   year: 2025
   date: "October 20, 2025"
   venue: "IndigoHub Makassar, Sulawesi Selatan"
-  description: "In collaboration with Indigo Telkom Indonesia, COCONUT Computer Club held Open Class Batch 8, a hands-on backend REST API training using the Go programming language that also introduced Apilogy, Telkom Indonesia's API marketplace. The class was led by Musdalipa and Syahrul Ramadhan with Ahmad Fajrul as moderator, and attended by more than 20 students and young developers from Makassar."
+  description: >-
+    In collaboration with Indigo Telkom Indonesia, COCONUT Computer Club held
+    Open Class Batch 8, a hands-on backend REST API training using the Go
+    programming language that also introduced Apilogy, Telkom Indonesia's API
+    marketplace. The class was led by Musdalipa and Syahrul Ramadhan with
+    Ahmad Fajrul as moderator, and attended by more than 20 students and young
+    developers from Makassar.
 - title: "Coconut Open Class - Belajar Dasar Website dengan SvelteKit"
   year: 2024
   date: "October 11, 2024"
@@ -18,45 +37,73 @@
     class series focused on building IT skills, the session targeted IT
     students as well as high school (SMA/SMK) students and was open to the
     general public.
+- title: "Blockchain Demystified - The Technology Behind the Digital Revolution"
+  year: 2024
+  date: "October 12, 2024"
+  venue: "Sekretariat Coconut Computer Club, Jl. Mon. Emmy Saelan III No. 70 Karunrung"
+  description: >-
+    A seminar presented by Syariful Mujaddiq exploring blockchain and the
+    technology behind the digital revolution. Held from 08.30 to 11.05 WITA,
+    participants gained useful knowledge, networking opportunities, and a
+    certificate.
 - title: "COCONUT Alumni Meetup - What! You Need to Know Before Becoming an Engineer"
   year: 2019
   date: "December 21, 2019"
   venue: "STMIK Profesional, Makassar"
   description: >-
     A talk series for college students and fresh graduates featuring eight
-    COCONUT Computer Club alumni: Nurkholish Halim, Profesional Cybersecurity,
-    on "Understanding The Digital Work Environment"; Bayu Mahendra, Database
-    Engineer at OVO, on "Multi-model highly available database"; Recky Phiter,
-    Sr. Software Engineer at DANA, on "Becoming a FinTech developer"; Iqbal
-    Nasikin, Security Testing Compliance at Gojek, on "Professional Pentester
-    vs Bug Hunter"; Muh Akbar, System Engineer at GVM Networks, on "Deploying
-    Microservices & CI/CD Best Practices"; Muh Iqbal H, Security Engineer at
-    LinkAja, on "How to start a career in cybersecurity"; Darmawan S, UI/UX
-    Designer at Blue Bird Group, on "How Important is UI/UX Design in the
-    Digital Products"; and Yaomal, System Engineer at Docotel, on "Scalable
-    Cloud Infra with OpenStack+CEPH".
+    COCONUT Computer Club alumni:
+    [Nurkholish Halim](https://coconut.or.id/people/nhalim), Profesional
+    Cybersecurity, on "Understanding The Digital Work Environment"; Bayu
+    Mahendra, Database Engineer at OVO, on "Multi-model highly available
+    database"; Recky Phiter, Sr. Software Engineer at DANA, on "Becoming a
+    FinTech developer"; [Iqbal Nasikin](https://coconut.or.id/people/xikin),
+    Security Testing Compliance at Gojek, on "Professional Pentester vs Bug
+    Hunter"; [Muh Akbar](https://coconut.or.id/people/akbar), System Engineer
+    at GVM Networks, on "Deploying Microservices & CI/CD Best Practices"; Muh
+    Iqbal H, Security Engineer at LinkAja, on "How to start a career in
+    cybersecurity"; Darmawan S, UI/UX Designer at Blue Bird Group, on "How
+    Important is UI/UX Design in the Digital Products"; and
+    [Yaomal](https://coconut.or.id/people/yaomal), System Engineer at Docotel,
+    on "Scalable Cloud Infra with OpenStack+CEPH".
 - title: "Full Dissclosure 2014 - Seminar Keamanan Teknologi Informasi Opensource"
   year: 2014
   date: "2014"
   venue: "Kampus 1 STMIK Profesional, Makassar"
-  description: "A 20-hour open-source information security seminar organized by COCONUT Computer Club, featuring \"Teknologi Sistem Operasi Open Source dari Masa ke Masa\" by Tasrif Hasanuddin, ST, M.Cs; \"Keamanan Teknologi Informasi Dampak dan Ancaman Bagi NKRI\" by Kolonel Arh Syarif Hidayatullah; \"Pentester Diary: Journey to Become UID (Linux Hacking)\" by Ahmad Muammar W.K, OSCP, OSCE; and \"Fun with ELF: Reverse-Engineering On *nix Machine\" by Nurkholish Halim."
-- title: "Seminar & Workshop Membuat Website Dengan Mudah Menggunakan Berbagai CMS"
+  description: >-
+    A 20-hour open-source information security seminar organized by COCONUT
+    Computer Club, featuring "Teknologi Sistem Operasi Open Source dari Masa
+    ke Masa" by Tasrif Hasanuddin, ST, M.Cs; "Keamanan Teknologi Informasi
+    Dampak dan Ancaman Bagi NKRI" by Kolonel Arh Syarif Hidayatullah;
+    "Pentester Diary: Journey to Become UID (Linux Hacking)" by Ahmad Muammar
+    W.K, OSCP, OSCE; and "Fun with ELF: Reverse-Engineering On *nix Machine"
+    by [Nurkholish Halim](https://coconut.or.id/people/nhalim).
+- title: "Seminar & Workshop - Building Websites Easily Using Various CMS"
   year: 2010
   date: "June 19, 2010"
   venue: "STMIK Profesional, Makassar"
   description: >-
     A seminar and workshop on building websites easily using various CMS such
-    as Joomla, Drupal, vBulletin, and phpBB, presented by Nurkholish Halim and
-    Yusuf Yacob Onaola. Topics covered web design basics (HTML), CMS
-    installation, building websites and community forums, installing
-    templates, modules, components, and plugins, plus an introduction to web
-    security. Participants received a certificate, a CD containing CMS
-    packages and templates, snacks, and workshop modules.
+    as Joomla, Drupal, vBulletin, and phpBB, presented by
+    [Nurkholish Halim](https://coconut.or.id/people/nhalim) and
+    [Yusuf Yacob Onaola](https://coconut.or.id/people/buqento). Topics
+    covered web design basics (HTML), CMS installation, building websites and
+    community forums, installing templates, modules, components, and plugins,
+    plus an introduction to web security. Participants received a
+    certificate, a CD containing CMS packages and templates, snacks, and
+    workshop modules.
 - title: "IDSECCONF 2012 - Konferensi Keamanan Komputer Nasional V"
   year: 2012
   date: "June 9-10, 2012"
   venue: "Gedung PWI Makassar"
-  description: "IDSECCONF came to Makassar for the first time with the theme \"Teknik Keamanan dan Penerapannya pada Teknologi Mobile\", where COCONUT Computer Club members took part in organizing the event together with the local Makassar hacker community. The conference was attended by more than 400 participants and featured talks by Onno W. Purbo and a Capture The Flag (CTF) competition."
+  description: >-
+    IDSECCONF came to Makassar for the first time with the theme "Teknik
+    Keamanan dan Penerapannya pada Teknologi Mobile", where COCONUT Computer
+    Club members took part in organizing the event together with the local
+    Makassar hacker community. The conference was attended by more than 400
+    participants and featured talks by
+    [Onno W. Purbo](https://id.wikipedia.org/wiki/Onno_W._Purbo) and a
+    Capture The Flag (CTF) competition.
 - title: "Workshop Raspberry Pi - It's Raspberry Not Blackberry..!!"
   year: 2012
   date: "December 21, 2012"
@@ -67,8 +114,9 @@
     covered an introduction to Raspberry Pi, programming with Python, GPIO
     interfacing, and Raspbian installation, opened with a talk on
     microcontroller technology by Tasrif Hasanuddin, ST, M.Cs, and hands-on
-    training by Ucog Sinaga, S.Kom and Nurkholish Halim, S.SI.
-- title: "SCAN TO COMPILE 01 - Penerimaan Calon Anggota Baru + Workshop Merakit PC"
+    training by Ucog Sinaga, S.Kom and
+    [Nurkholish Halim](https://coconut.or.id/people/nhalim), S.SI.
+- title: "SCAN TO COMPILE 01 - New Member Recruitment + PC Assembly Workshop"
   year: 2008
   date: "October 25-27, 2008"
   venue: "Kampus AMIK Profesional Makassar"
@@ -76,4 +124,3 @@
     COCONUT Computer Club's first event: a new member recruitment combined
     with a PC assembly workshop, held for all students of AMIK Profesional
     Makassar.
-
