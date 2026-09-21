@@ -1,10 +1,10 @@
 import emailjs, { init } from "@emailjs/browser";
 import { graphql } from "gatsby";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import HelmetWrapper from "../components/helmetWrapper";
 import Layout from "../components/layout";
 
-const RECAPTCHA_SITE_KEY = "6LfbocYtAAAAAKEiDCr8zrvhjHwTkSxzJzhVQVJ_";
+const TURNSTILE_SITE_KEY = "0x4AAAAAAE-aslG0x2WL3aML";
 
 const RequiredWarning = ({ fieldName }) => {
   return (
@@ -19,36 +19,16 @@ const ContactPage = ({ data: { site } }) => {
 
   const [formError, setFormError] = useState([]);
 
-  const recaptchaWidgetId = useRef(null);
-
   useEffect(() => {
     init(process.env.GATSBY_EMAILJS_USER_ID);
   }, []);
 
   useEffect(() => {
-    const renderBadge = () => {
-      if (!window.grecaptcha || !window.grecaptcha.render) return;
-      window.grecaptcha.ready(() => {
-        const el = document.getElementById("recaptcha-container");
-        if (el && recaptchaWidgetId.current == null) {
-          recaptchaWidgetId.current = window.grecaptcha.render(el, {
-            sitekey: RECAPTCHA_SITE_KEY,
-            size: "invisible",
-            badge: "inline",
-          });
-        }
-      });
-    };
-
-    if (window.grecaptcha) {
-      renderBadge();
-      return;
-    }
-    window.onRecaptchaLoad = renderBadge;
+    if (window.turnstile) return;
     const script = document.createElement("script");
-    script.src =
-      "https://www.google.com/recaptcha/api.js?render=explicit&onload=onRecaptchaLoad";
+    script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
     script.async = true;
+    script.defer = true;
     document.body.appendChild(script);
   }, []);
 
@@ -142,51 +122,43 @@ const ContactPage = ({ data: { site } }) => {
               // set state as batch to avoid race condition
               setFormError(checkedFields);
 
-              // if there are no errors, verify reCAPTCHA then send email
+              // if there are no errors, verify Turnstile then send email
               if (checkedFields.length === 0) {
-                const doSend = (token) => {
-                  setIsSending(true);
+                const turnstileToken = window.turnstile
+                  ? window.turnstile.getResponse()
+                  : "";
 
-                  emailjs
-                    .send(
-                      process.env.GATSBY_EMAILJS_SERVICE_ID,
-                      process.env.GATSBY_EMAILJS_TEMPLATE_ID,
-                      { ...templateParams, "g-recaptcha-response": token }
-                    )
-                    .then(
-                      () => {
-                        setSubmitted(true);
-                      },
-                      (rej) => {
-                        console.log("failed with result:", rej);
-                        console.log("failed detail:", JSON.stringify(rej, null, 2));
-                        let msg = "Something went wrong. Please email us directly at surat [AT] coconut.or.id";
-                        if (rej && typeof rej === "object") {
-                          const detail = rej.text || rej.message || rej.error || "";
-                          if (detail) msg = "Failed: " + detail;
-                        }
-                        setSendError(msg);
-                        setIsSending(false);
-                      }
-                    );
-                };
-
-                if (window.grecaptcha && recaptchaWidgetId.current != null) {
-                  window.grecaptcha
-                    .execute(recaptchaWidgetId.current, {
-                      action: "contact_submit",
-                    })
-                    .then(doSend)
-                    .catch(() => {
-                      setSendError(
-                        "reCAPTCHA verification failed. Please email us directly at surat [AT] coconut.or.id"
-                      );
-                    });
-                } else {
+                if (!turnstileToken) {
                   setSendError(
-                    "reCAPTCHA is still loading. Please wait a moment and try again, or email us directly at surat [AT] coconut.or.id"
+                    "Please complete the Cloudflare Turnstile check next to the submit button."
                   );
+                  return;
                 }
+
+                setIsSending(true);
+
+                emailjs
+                  .send(
+                    process.env.GATSBY_EMAILJS_SERVICE_ID,
+                    process.env.GATSBY_EMAILJS_TEMPLATE_ID,
+                    { ...templateParams, "cf-turnstile-response": turnstileToken }
+                  )
+                  .then(
+                    () => {
+                      setSubmitted(true);
+                    },
+                    (rej) => {
+                      console.log("failed with result:", rej);
+                      console.log("failed detail:", JSON.stringify(rej, null, 2));
+                      let msg = "Something went wrong. Please email us directly at surat [AT] coconut.or.id";
+                      if (rej && typeof rej === "object") {
+                        const detail = rej.text || rej.message || rej.error || "";
+                        if (detail) msg = "Failed: " + detail;
+                      }
+                      setSendError(msg);
+                      setIsSending(false);
+                    }
+                  );
               }
             }}
           >
@@ -257,7 +229,10 @@ const ContactPage = ({ data: { site } }) => {
                       gap: "12px",
                     }}
                   >
-                    <div id="recaptcha-container" />
+                    <div
+                      className="cf-turnstile"
+                      data-sitekey={TURNSTILE_SITE_KEY}
+                    />
                     <input
                       type="submit"
                       className="button -primary"
