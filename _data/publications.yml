@@ -1,3 +1,10 @@
+- title: "T4EDR: Hybrid Threat Detection Framework for EDR Based on Semantic Rule Embedding and Contextual Network Flow Analysis"
+  authors: M D A Nuzul, D Anggreani, M Faisal, A R Wahid, T K A Rahman
+  journal: Jurnal Nasional Pendidikan Teknik Informatika (JANAPATI)
+  url: https://doi.org/10.23887/janapati.v15i1.104059
+  year: 2026
+  abstract: |-
+    In response to the increasing complexity of cyber threats and attacks, this study proposes an innovative endpoint detection and response (EDR) framework named T4EDR (Transformer for Endpoint Detection and Response). Specifically, it addresses the inefficiencies of traditional systems that rely on static and less adaptive rules. T4EDR integrates semantic analysis methods to interpret security rules and a transformer-based deep learning model to contextually analyze network traffic flows. In the initial phase, thousands of security rules from Wazuh were extracted, embedded, and semantically validated against the MITRE ATT&CK framework, achieving a semantic coherence of 86.43% with a silhouette score of 0.702. Subsequently, the FlowBERT model was designed to classify network traffic flows using the CIC-IDS2018 dataset, achieving 91.1% accuracy, a macro-F1 of 0.79, and a mean Average Precision (mAP) of 0.90, surpassing the quantitative target of 85%. The integration of rule embeddings with FlowBERT hidden states through a linear projector enables adaptive mapping of endpoint activities to relevant security rules, supporting context-based automated responses. The main contribution of this study is an adaptive framework that bridges the gap between traditional rule analysis and deep learning-based detection, thereby enhancing the capability to detect multi-stage threats on modern endpoints.
 - title: "A Standardized Exchange Schema for Clandestine Networks: Modeling Proto-Deep State Transitions and Network Resilience"
   authors: Halim, Nurkholish
   journal: Pre-print
