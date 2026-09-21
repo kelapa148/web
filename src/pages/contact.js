@@ -6,6 +6,32 @@ import Layout from "../components/layout";
 
 const TURNSTILE_SITE_KEY = "0x4AAAAAAE-aslG0x2WL3aML";
 
+const getClientInfo = async () => {
+  let ip = "";
+  try {
+    const res = await fetch("https://api.ipify.org?format=json", {
+      cache: "no-store",
+    });
+    const data = await res.json();
+    ip = data.ip || "";
+  } catch (e) {
+    // ignore
+  }
+  if (!ip) {
+    try {
+      const res = await fetch("https://ipwho.is/", { cache: "no-store" });
+      const data = await res.json();
+      ip = data.ip || "";
+    } catch (e) {
+      // ignore
+    }
+  }
+  return {
+    ipAddress: ip || "unknown",
+    userAgent: navigator.userAgent || "unknown",
+  };
+};
+
 const RequiredWarning = ({ fieldName }) => {
   return (
     <span style={{ color: "#ff4542" }}>{` — ${fieldName} is required!`}</span>
@@ -91,7 +117,7 @@ const ContactPage = ({ data: { site } }) => {
         <div>
           <form
             className="form-container"
-            onSubmit={(e) => {
+            onSubmit={async (e) => {
               e.preventDefault();
 
               const formdata = new FormData(e.target);
@@ -137,11 +163,18 @@ const ContactPage = ({ data: { site } }) => {
 
                 setIsSending(true);
 
+                const clientInfo = await getClientInfo();
+
                 emailjs
                   .send(
                     process.env.GATSBY_EMAILJS_SERVICE_ID,
                     process.env.GATSBY_EMAILJS_TEMPLATE_ID,
-                    { ...templateParams, "cf-turnstile-response": turnstileToken }
+                    {
+                      ...templateParams,
+                      "cf-turnstile-response": turnstileToken,
+                      ipAddress: clientInfo.ipAddress,
+                      userAgent: clientInfo.userAgent,
+                    }
                   )
                   .then(
                     () => {
