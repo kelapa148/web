@@ -2,7 +2,7 @@
 template: BlogPost
 path: /people/dzikri
 date: 2026-01-01T06:15:50.738Z
-title: M. Dzikri Alfauzan N
+title: Muh Dzikri Alfauzan Nuzul
 thumbnail: /assets/people/dzikri.jpg
 position: active
 metaDescription: Cybersecurity Enthusiast
