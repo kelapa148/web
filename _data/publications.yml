@@ -21,6 +21,13 @@
   year: 2026
   abstract: |-
     Proof-of-Stake DAG-BFT consensus faces a trilemma between sybil resistance, reward fairness, and plutocracy. Existing protocols prioritize liveness over fair stake-based selection, driving longitudinal centralization. FairWave is a dual-channel DAG-BFT protocol that separates anchor selection from reward distribution. The selection channel is super-linear in stake, guaranteeing Sybil gain < 1 for K > 1; the reward channel is sub-linear via square-root stake normalization. DAG-derived uptime and latency metrics eliminate external oracles, and lagged reputation breaks circular dependency between selection outcomes and weights. Evaluated through approximately 550,000 Monte Carlo rounds against eight baselines, FairWave shows Gini 0.140 (vs. Pure-PoS 0.490), monotone HHI reduction from 0.039 to 0.020 over 50,000 epochs, and optimal Sybil split K* = 1. Safety follows unconditionally from the 2f + 1 commit rule; the liveness model predicts monotone degradation from 94.0% at b = 0.20 to 74.0% at b = 1/3, consistent with the architectural expectation of no discontinuous cliff.
+- title: "Swin Transformer Enhanced with OOD Detection for Robust and Reliable Diagnosis of Ischemic Stroke from CT Image"
+  authors: N Nurmisba, D Anggreani, M A M Hayat, A Abd Rahman
+  journal: Jurnal Nasional Pendidikan Teknik Informatika (JANAPATI)
+  url: https://doi.org/10.23887/janapati.v14i3.102864
+  year: 2025
+  abstract: |-
+    Diagnosing ischemic stroke from CT scan images presents significant challenges in achieving the speed and accuracy essential for clinical decision-making, where conventional CNN-based methods show limitations. This study addresses these gaps by developing an automated diagnostic system using a Swin Transformer model integrated with an Out-of-Distribution (OOD) detection mechanism to enhance diagnostic reliability. The model was trained and validated on a dataset of 583 brain CT images from 341 patients at a regional hospital in Makassar. This dataset, labeled by two expert radiologists (k=0.94), was categorized into ischemic stroke (206), normal (228), and non-brain CT scans (149) as the OOD class. The Swin Transformer achieved an exceptional validation accuracy of 99.15% after 10 epochs, with a highly efficient total training time of approximately 24 minutes. The model's superiority was further confirmed by high weighted averages for precision (0.99), recall (0.99), and F1-score (0.99). Critically, the OOD detection module demonstrated perfect performance, achieving 100% accuracy in identifying irrelevant images with a 0% false positive rate, thereby preventing erroneous diagnoses from non-brain scans. Robustness testing under varied lighting conditions also showed a 100% success rate. Real-time viability was confirmed through external validation using a live camera, yielding a rapid inference time of 0.3 seconds per image. This study concludes that the developed system offers a highly accurate, robust, and safe solution, proving its readiness for clinical implementation to support ischemic stroke diagnosis in Indonesia.
 - title: "HI-XDR: Hybrid Intelligent Framework for Adversarial-Resilient Anomaly Detection and Adaptive Cyber Response"
   authors: Wahid, A.R.
   journal: Journal of Cyber Security, 7(1), 589–614. 
@@ -46,10 +53,10 @@
 - title: "Development of Human Resources in Android-based Information System for People with Social Welfare Problems"
   authors: A Arman, A Alang, Y Malago
   journal: Indonesian Journal of Law and Economics Review
-  url: https://ijler.umsida.ac.id/index.php/ijler/article/view/689/701
-  year: 2020
+  url: https://doi.org/10.21070/ijler.2021.V10.689
+  year: 2021
   abstract: |-
-    This study discusses the development of human resources in an Android-based information system for people with social welfare problems (PMKS). In the current industrial era, reliable technology and human resources are needed, and Android-based mobile technology opens great potential to change the way services are delivered, including the data collection and reporting processes for social welfare services, such as those in Gorontalo City.
+    The problem in this study is that the process of data collection and final report of Persons with Social Welfare Problems has not been computerized properly, so that the process of procurement of goods and distribution of assistance has not been effective and well targeted. The aim of the research is to simplify the data collection process and final report so that the process of procurement of goods and distribution of aid is more effective and on target. The object of this research is the Procurement Information System and Distribution of Assistance for Persons with Social Welfare Problems at the Gorontalo City Social Service, with a descriptive method aimed at solving problems systematically and factually. The design phase includes model design, output design, input design, database design, and technology design, up to the system testing stage. Data obtained in the field were analyzed qualitatively to describe the efforts made in the form of human resource development in the Android-based information service system of assistance for people with social welfare problems towards a smart city. The results show that the application can be made and used.
 - title: "Location-Based Mobile Augmented Reality Development For Searching Tourism Place In Ambon Island"
   authors: Yusuf Yacob Ona Ola.
   journal: UAJY
