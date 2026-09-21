@@ -1,8 +1,10 @@
 import emailjs, { init } from "@emailjs/browser";
 import { graphql } from "gatsby";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import HelmetWrapper from "../components/helmetWrapper";
 import Layout from "../components/layout";
+
+const RECAPTCHA_SITE_KEY = "6LfbocYtAAAAAKEiDCr8zrvhjHwTkSxzJzhVQVJ_";
 
 const RequiredWarning = ({ fieldName }) => {
   return (
@@ -16,9 +18,38 @@ const ContactPage = ({ data: { site } }) => {
   const [sendError, setSendError] = useState("");
 
   const [formError, setFormError] = useState([]);
-  
+
+  const recaptchaWidgetId = useRef(null);
+
   useEffect(() => {
     init(process.env.GATSBY_EMAILJS_USER_ID);
+  }, []);
+
+  useEffect(() => {
+    const renderBadge = () => {
+      if (!window.grecaptcha || !window.grecaptcha.render) return;
+      window.grecaptcha.ready(() => {
+        const el = document.getElementById("recaptcha-container");
+        if (el && recaptchaWidgetId.current == null) {
+          recaptchaWidgetId.current = window.grecaptcha.render(el, {
+            sitekey: RECAPTCHA_SITE_KEY,
+            size: "invisible",
+            badge: "inline",
+          });
+        }
+      });
+    };
+
+    if (window.grecaptcha) {
+      renderBadge();
+      return;
+    }
+    window.onRecaptchaLoad = renderBadge;
+    const script = document.createElement("script");
+    script.src =
+      "https://www.google.com/recaptcha/api.js?render=explicit&onload=onRecaptchaLoad";
+    script.async = true;
+    document.body.appendChild(script);
   }, []);
 
   return (
@@ -111,32 +142,51 @@ const ContactPage = ({ data: { site } }) => {
               // set state as batch to avoid race condition
               setFormError(checkedFields);
 
-              // if there are no errors, send email
+              // if there are no errors, verify reCAPTCHA then send email
               if (checkedFields.length === 0) {
-                setIsSending(true);
+                const doSend = (token) => {
+                  setIsSending(true);
 
-                emailjs
-                  .send(
-                    process.env.GATSBY_EMAILJS_SERVICE_ID,
-                    process.env.GATSBY_EMAILJS_TEMPLATE_ID,
-                    templateParams
-                  )
-                  .then(
-                    () => {
-                      setSubmitted(true);
-                    },
-                    (rej) => {
-                      console.log("failed with result:", rej);
-                      console.log("failed detail:", JSON.stringify(rej, null, 2));
-                      let msg = "Something went wrong. Please email us directly at surat [AT] coconut.or.id";
-                      if (rej && typeof rej === "object") {
-                        const detail = rej.text || rej.message || rej.error || "";
-                        if (detail) msg = "Failed: " + detail;
+                  emailjs
+                    .send(
+                      process.env.GATSBY_EMAILJS_SERVICE_ID,
+                      process.env.GATSBY_EMAILJS_TEMPLATE_ID,
+                      { ...templateParams, "g-recaptcha-response": token }
+                    )
+                    .then(
+                      () => {
+                        setSubmitted(true);
+                      },
+                      (rej) => {
+                        console.log("failed with result:", rej);
+                        console.log("failed detail:", JSON.stringify(rej, null, 2));
+                        let msg = "Something went wrong. Please email us directly at surat [AT] coconut.or.id";
+                        if (rej && typeof rej === "object") {
+                          const detail = rej.text || rej.message || rej.error || "";
+                          if (detail) msg = "Failed: " + detail;
+                        }
+                        setSendError(msg);
+                        setIsSending(false);
                       }
-                      setSendError(msg);
-                      setIsSending(false);
-                    }
+                    );
+                };
+
+                if (window.grecaptcha && recaptchaWidgetId.current != null) {
+                  window.grecaptcha
+                    .execute(recaptchaWidgetId.current, {
+                      action: "contact_submit",
+                    })
+                    .then(doSend)
+                    .catch(() => {
+                      setSendError(
+                        "reCAPTCHA verification failed. Please email us directly at surat [AT] coconut.or.id"
+                      );
+                    });
+                } else {
+                  setSendError(
+                    "reCAPTCHA is still loading. Please wait a moment and try again, or email us directly at surat [AT] coconut.or.id"
                   );
+                }
               }
             }}
           >
@@ -199,7 +249,15 @@ const ContactPage = ({ data: { site } }) => {
                   <textarea name="w3lMessage" id="w3lMessage"></textarea>
                 </div>
                 {!isSending && (
-                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "flex-end",
+                      alignItems: "center",
+                      gap: "12px",
+                    }}
+                  >
+                    <div id="recaptcha-container" />
                     <input
                       type="submit"
                       className="button -primary"
