@@ -1,7 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import PublicationLink from "../components/publication-link"
+import PublicationModal from "../components/publication-modal"
 import HelmetWrapper from "../components/helmetWrapper"
 
 const PublicationPage = ({
@@ -10,9 +11,17 @@ const PublicationPage = ({
   }
 }) => {
 
+  const [selected, setSelected] = useState(null)
+
   const Publication = edges
     .filter(edge => !!edge.node.title)
-    .map(edge => <PublicationLink key={edge.node.id} publication={edge.node} />)
+    .map(edge => (
+      <PublicationLink
+        key={edge.node.id}
+        publication={edge.node}
+        onOpen={() => setSelected(edge.node)}
+      />
+    ))
 
   return (
     <Layout>
@@ -31,6 +40,12 @@ const PublicationPage = ({
       <div className="primary-content">
         {Publication}
       </div>
+      {selected && (
+        <PublicationModal
+          publication={selected}
+          onClose={() => setSelected(null)}
+        />
+      )}
     </Layout>
   )
 }
@@ -54,6 +69,7 @@ export const pageQuery = graphql`
           year
           url
           pdf
+          abstract
         }
       }
     }

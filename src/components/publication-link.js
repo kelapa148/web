@@ -1,6 +1,6 @@
 import React from "react"
 
-const PublicationLink = ({ publication }) => {
+const PublicationLink = ({ publication, onOpen }) => {
 
   const secondLineInfo = publication.journal
     ? publication.year
@@ -26,7 +26,16 @@ const PublicationLink = ({ publication }) => {
   return (
   <div className="publication-item">
     <h2 className="publication-title">
-      <a href={publication.url} target="_blank" rel="noopener noreferrer" className="post-link">
+      <a
+        href={publication.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="post-link"
+        onClick={e => {
+          e.preventDefault()
+          if (onOpen) onOpen()
+        }}
+      >
         {publication.title}
       </a>
     </h2>
