@@ -32,7 +32,22 @@ const IndexPage = ({
 
   return (
     <Layout>
-      <HelmetWrapper />
+      <HelmetWrapper
+        keywords={[
+          "COCONUT",
+          "Computer Club",
+          "think-tank",
+          "Community",
+          "Computer Vision",
+          "Cyber Security",
+          "Applied Machine Learning",
+          "High Performance Services",
+          "Energy Technology",
+          "Blockchain",
+          "Advanced Tech",
+          "Cloud Computing",
+        ]}
+      />
       <HeroHeader/>
       <h2>Research</h2>
       <div className="primary-content">

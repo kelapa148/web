@@ -7,6 +7,7 @@ const HelmetWrapper = ({
   description,
   slug,
   ogImage,
+  keywords,
 }) => {
   const data = useStaticQuery(
     graphql`
@@ -28,6 +29,12 @@ const HelmetWrapper = ({
   return (
     <Helmet>
       <title>{title || data.site.siteMetadata.title}</title>
+      {keywords && (
+        <meta
+          name="keywords"
+          content={Array.isArray(keywords) ? keywords.join(", ") : keywords}
+        />
+      )}
       {/* ---- FACEBOOK ---- */}
       {/* for post it must be siteUrl + slug */}
       <meta property="og:url" content={structUrl} />
