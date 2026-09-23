@@ -35,6 +35,8 @@ const PublicationPage = ({
         <a href="https://scholar.google.com/">Google scholar</a>
         {' '}
         for up-to-date publications or list of publications or below.
+        The publications listed here are authored by COCONUT members, some in
+        collaboration with researchers and organizations outside COCONUT.
         If you do not have access to any publication, please email.
       </div>
       <div className="primary-content">
