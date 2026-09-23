@@ -47,6 +47,11 @@ const ProjectCard = ({ project }) => {
             </a>
           </div>
         )}
+        {project.startYear && project.startYear !== "TBD" && (
+          <div className="project-year">
+            Started: {project.startYear}
+          </div>
+        )}
       </div>
     </article>
   )

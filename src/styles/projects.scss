@@ -28,6 +28,12 @@
     border-bottom-color: var(--primary-color);
   }
 }
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
 .project-card {
   display: flex;
   gap: 1rem;
@@ -83,6 +89,11 @@
   a {
     color: var(--primary-color);
   }
+}
+.project-year {
+  font-size: 0.78rem;
+  color: var(--text-secondary-color);
+  margin-top: 2px;
 }
 .status-badge {
   font-size: 0.72rem;

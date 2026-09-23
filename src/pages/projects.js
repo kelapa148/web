@@ -45,7 +45,7 @@ const ProjectsPage = ({
         ))}
       </div>
       {activeCategory && (
-        <div className="grids" style={{ marginTop: 24 }}>
+        <div className="project-list">
           {activeCategory.projects
             .filter(project => !!project.name)
             .map(project => (
@@ -80,6 +80,7 @@ export const pageQuery = graphql`
             description
             url
             status
+            startYear
           }
         }
       }
