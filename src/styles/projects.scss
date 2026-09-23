@@ -63,10 +63,15 @@
 }
 .project-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 0.75rem;
   flex-wrap: wrap;
+}
+.project-label {
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 0.85rem;
 }
 .project-name {
   font-size: 1rem;
