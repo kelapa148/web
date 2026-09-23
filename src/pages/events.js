@@ -18,6 +18,7 @@ const EventPage = ({
     <Layout>
       <HelmetWrapper
         title="Events"
+        description="Events and activities organized by COCONUT Computer Club, from seminars and workshops to conferences and community programs."
         slug="/events"
       />
       <h1>Events</h1>

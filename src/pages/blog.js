@@ -18,6 +18,7 @@ const BlogPage = ({
     <Layout>
       <HelmetWrapper
         title="Blogs"
+        description="Blog posts and stories from COCONUT Computer Club."
         slug="/blog"
       />
       <h1>Blogs</h1>

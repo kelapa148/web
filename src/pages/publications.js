@@ -27,6 +27,7 @@ const PublicationPage = ({
     <Layout>
       <HelmetWrapper
         title="Publications"
+        description="Publications by COCONUT Computer Club members — research papers and pre-prints in cybersecurity, applied machine learning, computer vision, and high performance services."
         slug="/publications"
       />
       <h1>Publications</h1>

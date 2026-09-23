@@ -24,6 +24,7 @@ const ResourcePage = ({
     <Layout>
       <HelmetWrapper
         title="Resources"
+        description="Tools and curated learning resources for COCONUT Computer Club members."
         slug="/resources"
       />
       <h1>Resources</h1>

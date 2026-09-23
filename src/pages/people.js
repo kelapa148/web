@@ -37,7 +37,11 @@ const PeoplePage = ({
 
   return (
     <Layout>
-      <HelmetWrapper title="People" slug="/people" />
+      <HelmetWrapper
+        title="People"
+        description="Members and active members of COCONUT Computer Club."
+        slug="/people"
+      />
       <h1>People</h1>
       <div className="grids small people-grids" style={{ marginBottom: "32px" }}>
         {currentPeople}
