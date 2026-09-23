@@ -8,7 +8,8 @@ metaDescription: Some resources before joining the lab
 ---
 
 Joining the lab might be overwhelming since we work on a broad range of applied machine learning
-and natural language processing. As most of incoming students may come from biomedical background,
+and natural language processing. As most of our members come from backgrounds in information technology,
+informatics, information systems, and computer science,
 learning some tools as you join the lab will be very useful later on. I listed some of the useful
 tools below:
 
@@ -19,7 +20,7 @@ Understand shell scripts are very useful here. There are a lot of resources onli
 find tutorials on shell scripts (Bash, Zsh, ...). I list some of them below.
 
 - [devhints.io/bash](https://devhints.io/bash)
-- [bluebirz.net tutorial on Bash](https://www.bluebirz.net/1580/lets-play-bash-script/)
+- [Belajar Bash: Dasar-Dasar Shell Script](/resources/try-bash)
 
 ## Version control
 
