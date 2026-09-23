@@ -39,10 +39,16 @@ const PeoplePage = ({
     <Layout>
       <HelmetWrapper
         title="People"
-        description="Members and active members of COCONUT Computer Club."
+        description="The people of COCONUT Computer Club come from diverse backgrounds: professionals, students, and researchers from different industries, campuses, ethnicities, and religions, because we value diversity and prioritize collaboration."
         slug="/people"
       />
       <h1>People</h1>
+      <div className="primary-content">
+        The people here come from professionals, students, and researchers
+        from different industries and campuses, as well as different
+        ethnicities and religions, because we value diversity and prioritize
+        collaboration.
+      </div>
       <div className="grids small people-grids" style={{ marginBottom: "32px" }}>
         {currentPeople}
       </div>

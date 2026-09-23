@@ -118,7 +118,7 @@
 }
 .project-desc {
   font-size: 0.85rem;
-  color: var(--text-secondary-color);
+  color: var(--text-color, rgba(0, 0, 0, 0.85));
   margin: 0.35rem 0;
 }
 .project-url {
