@@ -53,7 +53,7 @@ void function() {
 <p>Artikel ini membahas bahasa Bash yang sering dipakai di pekerjaan sehari-hari. Banyak tugas melibatkan CLI (Command Line Interface) secara intensif, jadi ini kesempatan untuk berbagi perintah-perintah Bash yang paling sering digunakan.</p>
 <p>Yuk langsung mulai!</p>
 <hr>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/bash-logo.jpg" alt="bash logo">
+<p><img src="/assets/resources/try-bash/bash-logo.jpg" alt="bash logo">
 <em>Ref: <a href="https://itsfoss.com/bash-5-release/">https://itsfoss.com/bash-5-release/</a></em></p>
 <h2>Apa itu Bash</h2>
 <p>Bash adalah salah satu shell script yang tersedia di sistem operasi UNIX. Beberapa shell lain di antaranya cmd dan powershell yang berjalan di Windows. Kita tidak perlu menginstal program apa pun untuk menjalankan Bash karena sudah terpasang bawaan.</p>
@@ -75,7 +75,7 @@ daftar file dan folder di path saat ini</li>
 <li><code class="language-text">cd</code>: change directory
 berpindah direktori</li>
 </ul>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/ls.png" alt="bash path"></p>
+<p><img src="/assets/resources/try-bash/ls.png" alt="bash path"></p>
 <p>Seperti contoh di atas, <code class="language-text">ls</code> menampilkan file dan folder di path saat ini. Selain itu, <code class="language-text">ls -la</code> (list – format <strong>l</strong>ong &#x26; <strong>a</strong>ll) menampilkan detail seperti permissions, nama pemilik, tanggal terakhir diubah, dan sebagainya dari setiap file/folder.</p>
 <p><code class="language-text">pwd</code> menampilkan nilai path saat ini dan kita bisa berpindah direktori menggunakan <code class="language-text">cd</code> dengan direktori tujuan. <code class="language-text">cd ~</code> berarti pindah ke root directory (<code class="language-text">/root</code>).</p>
 <hr>
@@ -94,7 +94,7 @@ menyalin file/folder</li>
 <li><code class="language-text">touch</code>
 membuat file kosong</li>
 </ul>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/pwd.png" alt="bash file management"></p>
+<p><img src="/assets/resources/try-bash/pwd.png" alt="bash file management"></p>
 <p>Saya membuat folder baru menggunakan <code class="language-text">mkdir test01</code>. Lalu masuk ke dalamnya dengan <code class="language-text">cd test01</code>, kemudian membuat file kosong dengan <code class="language-text">touch test01_a.txt</code>. Setelah itu, menyalinnya menjadi file baru dengan <code class="language-text">cp test01_a.txt test01_b.txt</code>.</p>
 <p>Di dalam folder "test01", saya membuat folder baru bernama "test02", lalu memindahkan "test01<em>b.txt" menggunakan `mv test01</em>b.txt test02/`. Path "test01<em>b.txt" berubah menjadi "test02/test01</em>b.txt".</p>
 <p>Untuk mengganti nama, kita harus menyebutkan nama file setelah memindahkannya, misalnya <code class="language-text">mv test01_b.txt test02/test02_b.txt</code>.</p>
@@ -112,9 +112,9 @@ mengeksekusi perintah dengan hak akses lebih tinggi</li>
 <li><code class="language-text">su</code>: <strong>s</strong>witch <strong>u</strong>ser
 berganti pengguna</li>
 </ul>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/chmod.png" alt="bash permissions"></p>
+<p><img src="/assets/resources/try-bash/chmod.png" alt="bash permissions"></p>
 <p>Seperti gambar di atas, <code class="language-text">ls -la</code> pada file "test01_a.txt" menampilkan permissions sebagai berikut:</p>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/chmod-EN.drawio.png" alt="permissions matrix"></p>
+<p><img src="/assets/resources/try-bash/chmod-EN.drawio.png" alt="permissions matrix"></p>
 <div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">ls -la
 -rw-r--r –  1 root  root    0 Nov 10 14:27 test01_a.txt
 # (-)rw-r--r – ==&gt; text01_a.txt adalah sebuah file
@@ -135,7 +135,7 @@ Eksekusi alternatif. Program dianggap sukses jika SALAH SATU perintah berhasil. 
 <li><code class="language-text">&amp;&amp;</code> (logical AND)
 Eksekusi alternatif. Program dianggap sukses jika SEMUA perintah berhasil. Hasilnya dari semua perintah yang berhasil.</li>
 </ul>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/operator.png" alt="bash operator"></p>
+<p><img src="/assets/resources/try-bash/operator.png" alt="bash operator"></p>
 <p>Pertama, <code class="language-text">echo "a" | echo "b"</code>, perintah kiri selesai lalu perintah kanan selesai. Hasilnya dari yang kanan yaitu "b".</p>
 <p>Kedua, <code class="language-text">echo "a" &amp; echo "b"</code>, keduanya dieksekusi bersamaan dan yang kanan selesai lebih dulu. Hasilnya "b" lalu "a".</p>
 <p>Ketiga, <code class="language-text">echo "a" || echo "b"</code>, perintah kiri berhasil dieksekusi dan hasilnya "a". Yang kanan tidak ikut dieksekusi. Program sukses.</p>
@@ -161,7 +161,7 @@ cat sample_back.sh
 echo &quot;a dog wags its tail&quot; | sed -e &quot;s/dog/cat/g&quot;
 echo &quot;a fish swims in a jar&quot; | cut -c 1-5
 echo &quot;my telephone number is 1234&quot; | grep -o &quot;[0-9]*&quot;</code></pre></div>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/sed.png" alt="bash string"></p>
+<p><img src="/assets/resources/try-bash/sed.png" alt="bash string"></p>
 <p>Saya telah membuat file bernama sample_back.sh berisi teks "this is a sample file for reading".</p>
 <p>Dan file lain bernama sample_front.sh berisi perintah-perintah berikut:</p>
 <ul>
@@ -181,20 +181,20 @@ elif [[ $a == 2 ]]; then
 else
     echo &quot;a is not 1 nor 2&quot;
 fi</code></pre></div>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/if.png" alt="bash if-else"></p>
+<p><img src="/assets/resources/try-bash/if.png" alt="bash if-else"></p>
 <p>Strukturnya adalah <code class="language-text">if</code>–<code class="language-text">then</code>–<code class="language-text">elif</code>–<code class="language-text">then</code>–<code class="language-text">else</code> dan ditutup <code class="language-text">fi</code> di akhir.</p>
 <h3>FOR-loop</h3>
 <div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">for i in $list; do
     echo this is $i
 done</code></pre></div>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/for.png" alt="bash for-loop"></p>
+<p><img src="/assets/resources/try-bash/for.png" alt="bash for-loop"></p>
 <p>Paling sering dipakai ketika kita harus melakukan sesuatu untuk setiap item dalam sebuah daftar.</p>
 <h3>WHILE-loop</h3>
 <div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">while [[ $a -le 10 ]]; do # cek apakah a kurang dari atau sama dengan 10
     echo &quot;$a&quot;;
     a=$((a+1)); # a = a + 1
 done</code></pre></div>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/while.png" alt="bash while-loop"></p>
+<p><img src="/assets/resources/try-bash/while.png" alt="bash while-loop"></p>
 <p>Jangan sampai membuat infinite loop.</p>
 <h3>TRY-CATCH</h3>
 <p>Sebenarnya Bash tidak punya blok try-catch, tapi kita bisa menerapkannya seperti ini.</p>
@@ -210,7 +210,7 @@ done</code></pre></div>
     # then
 }</code></pre></div>
 <p>Dan kode di atas menjalankan blok try, dan jika berhasil baru menjalankan blok then. Keduanya dihubungkan dengan <code class="language-text">&amp;&amp;</code>.</p>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/try-catch.png" alt="bash try-catch"></p>
+<p><img src="/assets/resources/try-bash/try-catch.png" alt="bash try-catch"></p>
 <ul>
 <li>File pertama – test02_v1.sh
 Saya menambahkan <code class="language-text">exit 1</code> untuk memicu error dan mendefinisikan "<strong>jika gagal</strong>, tampilkan this is part 2". Kita mendapat pesan part 2 karena blok pertama gagal.</li>
@@ -236,7 +236,7 @@ if [[ $(date -d &quot;$date_one&quot; +%s) -le $(date -d &quot;$date_two&quot; +
 else
     echo &quot;$date_one is GREATER THAN $date_two&quot;
 fi</code></pre></div>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/date.png" alt="bash date"></p>
+<p><img src="/assets/resources/try-bash/date.png" alt="bash date"></p>
 <p><code class="language-text">-d</code> akan menerjemahkan string menjadi objek tanggal. Seperti contoh di atas, <code class="language-text">-1 day</code> sama dengan <code class="language-text">1 day ago</code> yang berarti kemarin, sehingga <code class="language-text">2019-01-01 1 day</code> berarti "1 hari setelah 2019-01-01" yaitu 2019-01-02.</p>
 <p><code class="language-text">@[epoch_in_second]</code> adalah UNIX epoch, bentuk integer dari objek tanggal, misalnya <code class="language-text">@1546300800</code> sama dengan "2019-01-01 00:00:00 AM" (informasi lebih lanjut di <a href="https://www.epochconverter.com">epochconverter.com</a>).</p>
 <p><code class="language-text">+"..."</code> mendefinisikan format keluaran. Contohnya, <code class="language-text">+"%Y-%m-%d"</code> berarti "tahun-bulan-tanggal" misalnya 2019-01-10, dan <code class="language-text">+"%s"</code> berarti format epoch seperti yang disebutkan sebelumnya. Format terakhir bisa dipakai untuk membandingkan dua tanggal seperti kumpulan perintah terakhir di atas.</p>
@@ -248,7 +248,7 @@ Merujuk ke file Bash lain</li>
 <li><code class="language-text">sh</code>
 Mengeksekusi file Bash dari luar</li>
 </ul>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/source.png" alt="bash exec"></p>
+<p><img src="/assets/resources/try-bash/source.png" alt="bash exec"></p>
 <p>File pertama – "test01.sh" berisi "test<em>var". Setelah <code class="language-text">source test01.sh</code>, kita bisa menampilkan nilai "test</em>var" dari luar.</p>
 <p>File kedua – "test02.sh" berisi perintah <code class="language-text">echo</code>. Setelah <code class="language-text">sh test02.sh</code>, ia memicu <code class="language-text">echo</code> dan menampilkan teksnya.</p>
 <hr>
@@ -261,7 +261,7 @@ Mengeksekusi file Bash dari luar</li>
 }
 
 sample_func 1 2</code></pre></div>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/func.png" alt="bash func"></p>
+<p><img src="/assets/resources/try-bash/func.png" alt="bash func"></p>
 <p>Kita harus mendefinisikan fungsi sebelum menggunakannya. Cara memanggilnya adalah dengan mengetik nama fungsinya diikuti parameter yang dipisahkan spasi.</p>
 <p>Seperti contoh, kita memanggil <code class="language-text">sample_func</code> dengan parameter 1 dan 2. Di dalam fungsi, nilai "1" menjadi <code class="language-text">$1</code> dan ditugaskan ke variabel a, sedangkan nilai "2" menjadi <code class="language-text">$2</code> lalu ditugaskan ke variabel b. Di akhir, ia menampilkan "first is 1 and second is 2".</p>
 <hr>
@@ -279,7 +279,7 @@ sample_func 1 2</code></pre></div>
     beberapa
     baris
 comment</code></pre></div>
-<p><img src="https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/comment.png" alt="bash comment"></p>
+<p><img src="/assets/resources/try-bash/comment.png" alt="bash comment"></p>
 <p>Seperti contoh, "b" tidak akan tampil karena ia komentar. Begitu juga "d", "e", dan "f" karena berada dalam komentar multiline yang dikendalikan oleh kata "a_comment".</p>
 <hr>
 <p>Seperti yang saya katakan, ini adalah perintah-perintah yang paling sering saya gunakan dalam pekerjaan. Masih ada banyak perintah lain yang tidak disebutkan di sini. Semoga bermanfaat!</p>
