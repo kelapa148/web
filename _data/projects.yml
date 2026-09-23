@@ -39,7 +39,7 @@
   projects:
     - name: KotaCloud
       logo: /assets/projects/kotacloud.png
-      description: "KotaCloud is COCONUT's cloud platform, built to deliver public and private Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) in the spirit of AWS and Biznet GIO, including managed cloud-native application services."
+      description: "KotaCloud is a cloud platform delivering public and private Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS), including managed cloud-native application services."
       url: https://kotacloud.com
       status: active
       startYear: "2024"
