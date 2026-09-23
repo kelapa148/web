@@ -31,18 +31,23 @@ const ProjectsPage = ({
         focus areas: Finance, Energy, Health, Education, and Infrastructure
         &amp; Security.
       </div>
-      <div className="project-tabs" role="tablist">
-        {categories.map(cat => (
-          <button
-            key={cat.id}
-            role="tab"
-            aria-selected={cat.category === active}
-            className={"project-tab" + (cat.category === active ? " active" : "")}
-            onClick={() => setActive(cat.category)}
-          >
-            {cat.category}
-          </button>
-        ))}
+      <div className="project-tabs-wrapper">
+        <div className="project-tabs" role="tablist">
+          {categories.map(cat => (
+            <button
+              key={cat.id}
+              role="tab"
+              aria-selected={cat.category === active}
+              className={"project-tab" + (cat.category === active ? " active" : "")}
+              onClick={() => setActive(cat.category)}
+            >
+              {cat.category}
+            </button>
+          ))}
+        </div>
+        <span className="project-tabs-more" aria-hidden="true">
+          ›
+        </span>
       </div>
       {activeCategory && (
         <div className="project-list">

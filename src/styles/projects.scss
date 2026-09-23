@@ -1,3 +1,7 @@
+.project-tabs-wrapper {
+  position: relative;
+  margin-top: 2rem;
+}
 .project-tabs {
   display: flex;
   gap: 4px;
@@ -26,6 +30,24 @@
   &.active {
     color: var(--primary-color);
     border-bottom-color: var(--primary-color);
+  }
+}
+.project-tabs-more {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  padding-left: 28px;
+  background: linear-gradient(to right, transparent, var(--background) 60%);
+  color: var(--text-secondary-color);
+  font-size: 1.3rem;
+  pointer-events: none;
+}
+@media only screen and (max-width: 767px) {
+  .project-tabs-more {
+    display: flex;
   }
 }
 .project-list {
@@ -70,7 +92,7 @@
 }
 .project-label {
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--text-secondary-color);
   font-size: 0.85rem;
 }
 .project-name {
