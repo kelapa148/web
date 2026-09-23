@@ -255,14 +255,7 @@ const ContactPage = ({ data: { site } }) => {
                   <textarea name="w3lMessage" id="w3lMessage"></textarea>
                 </div>
                 {!isSending && (
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "flex-end",
-                      alignItems: "center",
-                      gap: "12px",
-                    }}
-                  >
+                  <div className="form-actions">
                     <div
                       className="cf-turnstile"
                       data-sitekey={TURNSTILE_SITE_KEY}

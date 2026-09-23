@@ -353,6 +353,27 @@ a {
 .primary-content {
   overflow-wrap: break-word;
 }
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+@media only screen and (max-width: 767px) {
+  .form-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    .cf-turnstile {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+    }
+    input[type="submit"] {
+      align-self: flex-end;
+    }
+  }
+}
 .form-container {
   background-color: var(--contact-bg);
   padding: 32px;

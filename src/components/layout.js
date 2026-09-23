@@ -38,11 +38,14 @@ export default ({ children }) => {
       {children}
       <footer className="site-footer">
         <p>
-          &copy; {new Date().getFullYear()} Coconut Lab &bull; Crafted with{" "}
+          &copy; 2008 - {new Date().getFullYear()} COCONUT Lab &bull; Crafted
+          with{" "}
           <span role="img" aria-label="love">
             ❤️
           </span>
           &nbsp; by <a href="https://github.com/kelapa148">kelapa148</a>
+          &nbsp;&bull;&nbsp;
+          <Link to="/privacy">Privacy Policy</Link>
         </p>
         <SocialLinks />
       </footer>

@@ -1,3 +1,18 @@
+- category: Infrastructure & Security
+  description: "Building and safeguarding the resilient backbone of modern networks. Our focus spans secure distributed systems, scalable cloud computing, next-generation 5G/6G architectures, and advanced threat defense for critical digital environments."
+  projects:
+    - name: KotaCloud
+      logo: /assets/projects/kotacloud.png
+      description: "KotaCloud is a cloud platform delivering public and private Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS), including managed cloud-native application services."
+      url: https://kotacloud.com
+      status: active
+      startYear: "2024"
+    - name: INESA
+      logo: /assets/projects/inesa.png
+      description: "Inovasi dan Edukasi Desa (INESA): a smart farming platform powered by IoT and AI that brings real-time land monitoring, AI-based recommendations, and automatic irrigation to Indonesian villages, starting with Desa Rajang, Pinrang."
+      url: https://inesa.id
+      status: active
+      startYear: "2025"
 - category: Finance
   description: "Intersecting computer science with complex economic ecosystems. Our work applies quantitative finance and data-driven modeling across traditional banking, capital markets, and decentralized cryptocurrency networks."
   projects:
@@ -28,27 +43,6 @@
 - category: Education
   description: "Transforming knowledge delivery through technology. We develop adaptive learning platforms, educational technology (EdTech) architectures, and data-driven tools to optimize the modern learning experience."
   projects:
-    - name: TBD
-      logo: ""
-      description: TBD
-      url: ""
-      status: inactive
-      startYear: TBD
-- category: Infrastructure & Security
-  description: "Building and safeguarding the resilient backbone of modern networks. Our focus spans secure distributed systems, scalable cloud computing, next-generation 5G/6G architectures, and advanced threat defense for critical digital environments."
-  projects:
-    - name: KotaCloud
-      logo: /assets/projects/kotacloud.png
-      description: "KotaCloud is a cloud platform delivering public and private Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS), including managed cloud-native application services."
-      url: https://kotacloud.com
-      status: active
-      startYear: "2024"
-    - name: INESA
-      logo: /assets/projects/inesa.png
-      description: "Inovasi dan Edukasi Desa (INESA): a smart farming platform powered by IoT and AI that brings real-time land monitoring, AI-based recommendations, and automatic irrigation to Indonesian villages, starting with Desa Rajang, Pinrang."
-      url: https://inesa.id
-      status: active
-      startYear: "2025"
     - name: TBD
       logo: ""
       description: TBD
