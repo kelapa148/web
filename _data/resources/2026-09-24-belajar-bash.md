@@ -15,7 +15,7 @@ Yuk langsung mulai!
 
 ---
 
-![bash logo](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/bash-logo.jpg)
+![bash logo](/assets/resources/try-bash/bash-logo.jpg)
 *Ref: <https://itsfoss.com/bash-5-release/>*
 
 ## Apa itu Bash
@@ -43,7 +43,7 @@ Untuk melihat nilai path saat ini, gunakan `pwd`. `ls` untuk menampilkan daftar 
 - `cd`: change directory
   berpindah direktori
 
-![bash path](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/ls.png)
+![bash path](/assets/resources/try-bash/ls.png)
 
 Seperti contoh di atas, `ls` menampilkan file dan folder di path saat ini. Selain itu, `ls -la` (list – format **l**ong & **a**ll) menampilkan detail seperti permissions, nama pemilik, tanggal terakhir diubah, dan sebagainya dari setiap file/folder.
 
@@ -68,7 +68,7 @@ Membuat direktori baru dengan `mkdir` atau file kosong baru dengan `touch`. Ingi
 - `touch`
   membuat file kosong
 
-![bash file management](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/pwd.png)
+![bash file management](/assets/resources/try-bash/pwd.png)
 
 Saya membuat folder baru menggunakan `mkdir test01`. Lalu masuk ke dalamnya dengan `cd test01`, kemudian membuat file kosong dengan `touch test01_a.txt`. Setelah itu, menyalinnya menjadi file baru dengan `cp test01_a.txt test01_b.txt`.
 
@@ -93,11 +93,11 @@ Untuk beberapa file yang membutuhkan hak akses lebih tinggi, `sudo` akan mengeks
 - `su`: **s**witch **u**ser
   berganti pengguna
 
-![bash permissions](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/chmod.png)
+![bash permissions](/assets/resources/try-bash/chmod.png)
 
 Seperti gambar di atas, `ls -la` pada file "test01_a.txt" menampilkan permissions sebagai berikut:
 
-![permissions matrix](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/chmod-EN.drawio.png)
+![permissions matrix](/assets/resources/try-bash/chmod-EN.drawio.png)
 
 ```sh
 ls -la
@@ -125,7 +125,7 @@ Terakhir, berganti pengguna ke tester dengan `su tester`.
 - `&&` (logical AND)
   Eksekusi alternatif. Program dianggap sukses jika SEMUA perintah berhasil. Hasilnya dari semua perintah yang berhasil.
 
-![bash operator](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/operator.png)
+![bash operator](/assets/resources/try-bash/operator.png)
 
 Pertama, `echo "a" | echo "b"`, perintah kiri selesai lalu perintah kanan selesai. Hasilnya dari yang kanan yaitu "b".
 
@@ -162,7 +162,7 @@ echo "a fish swims in a jar" | cut -c 1-5
 echo "my telephone number is 1234" | grep -o "[0-9]*"
 ```
 
-![bash string](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/sed.png)
+![bash string](/assets/resources/try-bash/sed.png)
 
 Saya telah membuat file bernama sample_back.sh berisi teks "this is a sample file for reading".
 
@@ -190,7 +190,7 @@ else
 fi
 ```
 
-![bash if-else](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/if.png)
+![bash if-else](/assets/resources/try-bash/if.png)
 
 Strukturnya adalah `if`–`then`–`elif`–`then`–`else` dan ditutup `fi` di akhir.
 
@@ -202,7 +202,7 @@ for i in $list; do
 done
 ```
 
-![bash for-loop](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/for.png)
+![bash for-loop](/assets/resources/try-bash/for.png)
 
 Paling sering dipakai ketika kita harus melakukan sesuatu untuk setiap item dalam sebuah daftar.
 
@@ -215,7 +215,7 @@ while [[ $a -le 10 ]]; do # cek apakah a kurang dari atau sama dengan 10
 done
 ```
 
-![bash while-loop](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/while.png)
+![bash while-loop](/assets/resources/try-bash/while.png)
 
 Jangan sampai membuat infinite loop.
 
@@ -243,7 +243,7 @@ Kode di atas menjalankan blok try, dan jika gagal baru menjalankan blok catch. K
 
 Dan kode di atas menjalankan blok try, dan jika berhasil baru menjalankan blok then. Keduanya dihubungkan dengan `&&`.
 
-![bash try-catch](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/try-catch.png)
+![bash try-catch](/assets/resources/try-bash/try-catch.png)
 
 - File pertama – test02_v1.sh
   Saya menambahkan `exit 1` untuk memicu error dan mendefinisikan "**jika gagal**, tampilkan this is part 2". Kita mendapat pesan part 2 karena blok pertama gagal.
@@ -275,7 +275,7 @@ else
 fi
 ```
 
-![bash date](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/date.png)
+![bash date](/assets/resources/try-bash/date.png)
 
 `-d` akan menerjemahkan string menjadi objek tanggal. Seperti contoh di atas, `-1 day` sama dengan `1 day ago` yang berarti kemarin, sehingga `2019-01-01 1 day` berarti "1 hari setelah 2019-01-01" yaitu 2019-01-02.
 
@@ -292,7 +292,7 @@ fi
 - `sh`
   Mengeksekusi file Bash dari luar
 
-![bash exec](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/source.png)
+![bash exec](/assets/resources/try-bash/source.png)
 
 File pertama – "test01.sh" berisi "test_var". Setelah `source test01.sh`, kita bisa menampilkan nilai "test_var" dari luar.
 
@@ -314,7 +314,7 @@ sample_func() {
 sample_func 1 2
 ```
 
-![bash func](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/func.png)
+![bash func](/assets/resources/try-bash/func.png)
 
 Kita harus mendefinisikan fungsi sebelum menggunakannya. Cara memanggilnya adalah dengan mengetik nama fungsinya diikuti parameter yang dipisahkan spasi.
 
@@ -340,7 +340,7 @@ Ada 2 cara menambahkan komentar
 comment
 ```
 
-![bash comment](https://bluebirzdotnet.s3.ap-southeast-1.amazonaws.com/try-bash/comment.png)
+![bash comment](/assets/resources/try-bash/comment.png)
 
 Seperti contoh, "b" tidak akan tampil karena ia komentar. Begitu juga "d", "e", dan "f" karena berada dalam komentar multiline yang dikendalikan oleh kata "a_comment".
 
