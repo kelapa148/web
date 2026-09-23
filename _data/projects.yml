@@ -37,7 +37,7 @@
       description: "Inovasi dan Edukasi Desa (INESA): a smart farming platform powered by IoT and AI that brings real-time land monitoring, AI-based recommendations, and automatic irrigation to Indonesian villages, starting with Desa Rajang, Pinrang."
       url: https://inesa.id
       status: active
-      startYear: 2025
+      startYear: "2025"
     - name: TBD
       logo: ""
       description: TBD
