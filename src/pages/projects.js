@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useRef, useState } from "react"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import ProjectCard from "../components/project-card"
@@ -15,6 +15,7 @@ const ProjectsPage = ({
     .map(edge => edge.node)
 
   const [active, setActive] = useState(categories.length ? categories[0].category : "")
+  const tabsRef = useRef(null)
 
   const activeCategory = categories.find(cat => cat.category === active)
 
@@ -32,7 +33,7 @@ const ProjectsPage = ({
         &amp; Security.
       </div>
       <div className="project-tabs-wrapper">
-        <div className="project-tabs" role="tablist">
+        <div className="project-tabs" role="tablist" ref={tabsRef}>
           {categories.map(cat => (
             <button
               key={cat.id}
@@ -45,10 +46,21 @@ const ProjectsPage = ({
             </button>
           ))}
         </div>
-        <span className="project-tabs-more" aria-hidden="true">
+        <span
+          className="project-tabs-more"
+          aria-hidden="true"
+          onClick={() => {
+            if (tabsRef.current) {
+              tabsRef.current.scrollBy({ left: 250, behavior: "smooth" })
+            }
+          }}
+        >
           ›
         </span>
       </div>
+      {activeCategory && activeCategory.description && (
+        <p className="project-category-desc">{activeCategory.description}</p>
+      )}
       {activeCategory && (
         <div className="project-list">
           {activeCategory.projects
@@ -74,11 +86,12 @@ export const pageQuery = graphql`
         description
       }
     }
-    allProjectsYaml {
+        allProjectsYaml {
       edges {
         node {
           id
           category
+          description
           projects {
             name
             logo

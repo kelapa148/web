@@ -43,7 +43,17 @@
   background: linear-gradient(to right, transparent, var(--background) 60%);
   color: var(--text-secondary-color);
   font-size: 1.3rem;
-  pointer-events: none;
+  cursor: pointer;
+  user-select: none;
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+.project-category-desc {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--text-secondary-color);
+  margin: 14px 0 0;
 }
 @media only screen and (max-width: 767px) {
   .project-tabs-more {

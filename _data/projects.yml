@@ -1,4 +1,5 @@
 - category: Finance
+  description: "Intersecting computer science with complex economic ecosystems. Our work applies quantitative finance and data-driven modeling across traditional banking, capital markets, and decentralized cryptocurrency networks."
   projects:
     - name: TBD
       logo: ""
@@ -7,6 +8,7 @@
       status: inactive
       startYear: TBD
 - category: Energy
+  description: "Driving tech-enabled innovation in sustainable power. We conduct applied research in renewable energy integration, advanced energy storage optimization, and smart grid management systems."
   projects:
     - name: TBD
       logo: ""
@@ -15,6 +17,7 @@
       status: inactive
       startYear: TBD
 - category: Health
+  description: "Bridging computing and medicine. Our projects leverage health informatics, computer vision for medical diagnostics, and predictive modeling to enhance digital healthcare infrastructure and clinical outcomes."
   projects:
     - name: TBD
       logo: ""
@@ -23,6 +26,7 @@
       status: inactive
       startYear: TBD
 - category: Education
+  description: "Transforming knowledge delivery through technology. We develop adaptive learning platforms, educational technology (EdTech) architectures, and data-driven tools to optimize the modern learning experience."
   projects:
     - name: TBD
       logo: ""
@@ -31,6 +35,7 @@
       status: inactive
       startYear: TBD
 - category: Infrastructure & Security
+  description: "Building and safeguarding the resilient backbone of modern networks. Our focus spans secure distributed systems, scalable cloud computing, next-generation 5G/6G architectures, and advanced threat defense for critical digital environments."
   projects:
     - name: INESA
       logo: /assets/projects/inesa.png
