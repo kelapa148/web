@@ -16,6 +16,7 @@
 }
 .timeline-content {
   flex: 1;
+  min-width: 0;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--card-bdr);
 }
@@ -42,6 +43,21 @@
     height: 13px;
     vertical-align: -2px;
     margin-right: 3px;
+  }
+}
+.event-description {
+  overflow-wrap: break-word;
+}
+@media only screen and (max-width: 767px) {
+  .timeline-item {
+    gap: 0.75rem;
+  }
+  .timeline-year {
+    flex: 0 0 42px;
+    font-size: 1.1rem;
+  }
+  .event-venue {
+    white-space: normal;
   }
 }
 .event-description {
