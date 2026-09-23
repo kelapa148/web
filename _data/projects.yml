@@ -1,0 +1,40 @@
+- category: Finance
+  projects:
+    - name: TBD
+      logo: ""
+      description: TBD
+      url: ""
+      status: inactive
+- category: Energy
+  projects:
+    - name: TBD
+      logo: ""
+      description: TBD
+      url: ""
+      status: inactive
+- category: Health
+  projects:
+    - name: TBD
+      logo: ""
+      description: TBD
+      url: ""
+      status: inactive
+- category: Education
+  projects:
+    - name: TBD
+      logo: ""
+      description: TBD
+      url: ""
+      status: inactive
+- category: Infrastructure & Security
+  projects:
+    - name: INESA
+      logo: /assets/projects/inesa.png
+      description: "Inovasi dan Edukasi Desa (INESA): a smart farming platform powered by IoT and AI that brings real-time land monitoring, AI-based recommendations, and automatic irrigation to Indonesian villages, starting with Desa Rajang, Pinrang."
+      url: https://inesa.id
+      status: active
+    - name: TBD
+      logo: ""
+      description: TBD
+      url: ""
+      status: inactive

@@ -1,0 +1,79 @@
+.project-category {
+  margin: 2.5rem 0;
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+}
+.project-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: var(--card-bg);
+  border: 1px solid var(--card-bdr);
+  border-radius: 9px;
+  padding: 16px;
+  box-shadow: 0 0 30px var(--card-shadow);
+}
+.project-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  flex: 0 0 64px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 6px;
+  box-sizing: border-box;
+  &-placeholder {
+    background: var(--card-bdr);
+  }
+}
+.project-body {
+  flex: 1;
+  min-width: 0;
+}
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.project-name {
+  font-size: 1rem;
+  margin: 0;
+  .post-link {
+    color: var(--text-color);
+    text-decoration: none;
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
+.project-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary-color);
+  margin: 0.35rem 0;
+}
+.project-url {
+  font-size: 0.8rem;
+  a {
+    color: var(--primary-color);
+  }
+}
+.status-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  &.active {
+    background: #e6f7ee;
+    color: #1c7c47;
+  }
+  &.inactive {
+    background: var(--card-bdr);
+    color: var(--text-secondary-color);
+  }
+}
