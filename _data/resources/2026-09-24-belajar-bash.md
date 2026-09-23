@@ -2,9 +2,9 @@
 template: BlogPost
 path: /resources/try-bash
 date: 2026-09-24T07:08:53.137Z
-title: Belajar Bash: Dasar-Dasar Shell Script
+title: "Belajar Bash: Dasar-Dasar Shell Script"
 thumbnail: ""
-metaDescription: Tutorial dasar Bash untuk pemula: path, file, permission, operator, string, kondisi, perulangan, dan fungsi.
+metaDescription: "Tutorial dasar Bash untuk pemula: path, file, permission, operator, string, kondisi, perulangan, dan fungsi."
 ---
 
 Halo semuanya!
