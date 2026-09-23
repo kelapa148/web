@@ -18,6 +18,7 @@ const EventPage = ({
     <Layout>
       <HelmetWrapper
         title="Events"
+        slug="/events"
       />
       <h1>Events</h1>
       <div className="primary-content">

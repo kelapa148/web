@@ -24,6 +24,7 @@ const ResourcePage = ({
     <Layout>
       <HelmetWrapper
         title="Resources"
+        slug="/resources"
       />
       <h1>Resources</h1>
       <h2>Tools</h2>

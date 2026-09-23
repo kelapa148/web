@@ -27,6 +27,7 @@ const PublicationPage = ({
     <Layout>
       <HelmetWrapper
         title="Publications"
+        slug="/publications"
       />
       <h1>Publications</h1>
       <div className="primary-content">

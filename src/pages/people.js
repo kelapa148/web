@@ -37,7 +37,7 @@ const PeoplePage = ({
 
   return (
     <Layout>
-      <HelmetWrapper title="People" />
+      <HelmetWrapper title="People" slug="/people" />
       <h1>People</h1>
       <div className="grids small people-grids" style={{ marginBottom: "32px" }}>
         {currentPeople}

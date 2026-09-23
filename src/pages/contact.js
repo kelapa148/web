@@ -63,6 +63,7 @@ const ContactPage = ({ data: { site } }) => {
       <HelmetWrapper
         title={`Contact | ${site.siteMetadata.title}`}
         description={"Contact page of " + site.siteMetadata.description}
+        slug="/contact"
       />
       <div className="two-grids -contact">
         <div>

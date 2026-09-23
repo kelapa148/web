@@ -35,6 +35,11 @@ const HelmetWrapper = ({
           content={Array.isArray(keywords) ? keywords.join(", ") : keywords}
         />
       )}
+      <meta
+        name="description"
+        content={description || data.site.siteMetadata.description}
+      />
+      <link rel="canonical" href={structUrl} />
       {/* ---- FACEBOOK ---- */}
       {/* for post it must be siteUrl + slug */}
       <meta property="og:url" content={structUrl} />

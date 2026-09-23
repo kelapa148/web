@@ -18,6 +18,7 @@ const BlogPage = ({
     <Layout>
       <HelmetWrapper
         title="Blogs"
+        slug="/blog"
       />
       <h1>Blogs</h1>
       <div className="grids">
