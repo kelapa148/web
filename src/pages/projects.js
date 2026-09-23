@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import ProjectCard from "../components/project-card"
@@ -10,23 +10,13 @@ const ProjectsPage = ({
   }
 }) => {
 
-  const Categories = edges
+  const categories = edges
     .filter(edge => !!edge.node.category)
-    .map(edge => (
-      <section key={edge.node.id} className="project-category">
-        <h2>{edge.node.category}</h2>
-        <div className="grids">
-          {edge.node.projects
-            .filter(project => !!project.name)
-            .map(project => (
-              <ProjectCard
-                key={project.name + project.description}
-                project={project}
-              />
-            ))}
-        </div>
-      </section>
-    ))
+    .map(edge => edge.node)
+
+  const [active, setActive] = useState(categories.length ? categories[0].category : "")
+
+  const activeCategory = categories.find(cat => cat.category === active)
 
   return (
     <Layout>
@@ -41,7 +31,31 @@ const ProjectsPage = ({
         focus areas: Finance, Energy, Health, Education, and Infrastructure
         &amp; Security.
       </div>
-      {Categories}
+      <div className="project-tabs" role="tablist">
+        {categories.map(cat => (
+          <button
+            key={cat.id}
+            role="tab"
+            aria-selected={cat.category === active}
+            className={"project-tab" + (cat.category === active ? " active" : "")}
+            onClick={() => setActive(cat.category)}
+          >
+            {cat.category}
+          </button>
+        ))}
+      </div>
+      {activeCategory && (
+        <div className="grids" style={{ marginTop: 24 }}>
+          {activeCategory.projects
+            .filter(project => !!project.name)
+            .map(project => (
+              <ProjectCard
+                key={project.name + project.description}
+                project={project}
+              />
+            ))}
+        </div>
+      )}
     </Layout>
   )
 }
