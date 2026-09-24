@@ -5,8 +5,8 @@
 <url> <loc>https://coconut.or.id/people/agus</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/arhamul</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/dayat</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://coconut.or.id/people/galbi</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/dzikri</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://coconut.or.id/people/galbi</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/indal</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/kaisya</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/maulana</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -27,9 +27,9 @@
 <url> <loc>https://coconut.or.id/people/aldi</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/bayu</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/iqbalh</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://coconut.or.id/people/obo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/ondolz</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/recky</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://coconut.or.id/people/obo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/seno</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/wahid</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/xikin</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -43,6 +43,7 @@
 <url> <loc>https://coconut.or.id/contact/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/events/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://coconut.or.id/join/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/people/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/privacy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://coconut.or.id/projects/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
