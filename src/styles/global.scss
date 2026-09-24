@@ -160,6 +160,9 @@ a {
 .hero-header {
   // padding: 0 0 64px;
   max-width: 980px;
+  .primary-content {
+    font-size: 17px;
+  }
 }
 .headline {
   font-size: 36px;
@@ -329,6 +332,32 @@ a {
   a {
     font-weight: 700;
   }
+  .footer-info {
+    p {
+      margin: 0;
+    }
+  }
+  .footer-links {
+    margin-top: 4px;
+    font-size: 0.85rem;
+    a {
+      margin: 0 6px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    span {
+      opacity: 0.5;
+    }
+  }
+  .footer-logo {
+    margin-left: auto;
+    img {
+      height: 36px;
+      width: auto;
+      display: block;
+    }
+  }
   .social-links {
     display: flex;
     align-items: center;
@@ -436,9 +465,15 @@ body.dark {
   .gg-moon {
     display: none;
   }
+  .footer-logo .footer-logo-light {
+    display: none;
+  }
 }
 body.light {
   .gg-sun {
+    display: none;
+  }
+  .footer-logo .footer-logo-dark {
     display: none;
   }
 }
