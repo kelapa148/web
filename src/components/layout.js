@@ -37,29 +37,33 @@ export default ({ children }) => {
       </header>
       {children}
       <footer className="site-footer">
-        <div className="footer-info">
-          <p>
-            &copy; 2008 - {new Date().getFullYear()} COCONUT Lab &bull; by 1337
-            Team
-          </p>
+        <div className="footer-left">
+          <div className="footer-logo">
+            <img
+              className="footer-logo-light"
+              src="/assets/logos/coconut-footer.png"
+              alt="COCONUT Computer Club"
+            />
+            <img
+              className="footer-logo-dark"
+              src="/assets/logos/coconut-footer-white.png"
+              alt="COCONUT Computer Club"
+            />
+          </div>
           <p className="footer-links">
             <Link to="/join">Join Us Now</Link>
             <span aria-hidden="true">&bull;</span>
             <Link to="/privacy">Privacy Policy</Link>
           </p>
         </div>
-        <SocialLinks />
-        <div className="footer-logo">
-          <img
-            className="footer-logo-light"
-            src="/assets/logos/coconut-footer.png"
-            alt="COCONUT Computer Club"
-          />
-          <img
-            className="footer-logo-dark"
-            src="/assets/logos/coconut-footer-white.png"
-            alt="COCONUT Computer Club"
-          />
+        <div className="footer-center">
+          <p>
+            &copy; 2008 - {new Date().getFullYear()} COCONUT Lab &bull; by 1337
+            Team
+          </p>
+        </div>
+        <div className="footer-social">
+          <SocialLinks />
         </div>
       </footer>
     </div>
