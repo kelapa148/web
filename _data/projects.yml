@@ -49,9 +49,9 @@
 - category: Education
   description: "Transforming knowledge delivery through technology. We develop adaptive learning platforms, educational technology (EdTech) architectures, and data-driven tools to optimize the modern learning experience."
   projects:
-    - name: TBD
-      logo: ""
-      description: TBD
-      url: ""
+    - name: KOLAH
+      logo: /assets/projects/kolah.png
+      description: "KOLAH is an interactive online learning platform that connects people who want to learn with quality courses. It also aims to help honorary teachers in Indonesia earn additional income, addressing the challenge of their modest salaries."
+      url: https://kolah.id
       status: inactive
-      startYear: TBD
+      startYear: "2021"

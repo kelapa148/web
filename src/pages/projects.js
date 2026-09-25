@@ -19,6 +19,13 @@ const ProjectsPage = ({
 
   const activeCategory = categories.find(cat => cat.category === active)
 
+  const sortByNewestYear = projects =>
+    [...projects].sort((a, b) => {
+      const ay = parseInt(a.startYear, 10)
+      const by = parseInt(b.startYear, 10)
+      return (Number.isNaN(by) ? -1 : by) - (Number.isNaN(ay) ? -1 : ay)
+    })
+
   return (
     <Layout>
       <HelmetWrapper
@@ -63,7 +70,7 @@ const ProjectsPage = ({
       )}
       {activeCategory && (
         <div className="project-list">
-          {activeCategory.projects
+          {sortByNewestYear(activeCategory.projects)
             .filter(project => !!project.name)
             .map(project => (
               <ProjectCard
