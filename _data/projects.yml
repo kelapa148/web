@@ -28,12 +28,12 @@
 - category: Finance
   description: "Intersecting computer science with complex economic ecosystems. Our work applies quantitative finance and data-driven modeling across traditional banking, capital markets, and decentralized cryptocurrency networks."
   projects:
-    - name: TBD
-      logo: ""
-      description: TBD
-      url: ""
-      status: inactive
-      startYear: TBD
+    - name: FuDive
+      logo: /assets/projects/fudive.png
+      description: "FuDive Engineering combines software engineering and quantitative financial engineering to unify fragmented investment platforms, model portfolio risk, and develop data-driven strategies for asset allocation, diversification, and reinvestment."
+      url: https://fudive.com
+      status: active
+      startYear: "2025"
 - category: Energy
   description: "Driving tech-enabled innovation in sustainable power. We conduct applied research in renewable energy integration, advanced energy storage optimization, and smart grid management systems."
   projects:
