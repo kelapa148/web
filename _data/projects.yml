@@ -1,6 +1,12 @@
 - category: Infrastructure & Security
   description: "Building and safeguarding the resilient backbone of modern networks. Our focus spans secure distributed systems, scalable cloud computing, next-generation 5G/6G architectures, and advanced threat defense for critical digital environments."
   projects:
+    - name: VulneraX
+      logo: /assets/projects/vulnerax.png
+      description: "VulneraX operates in security services such as red teaming, and builds a Ransomware Readiness Assessment platform alongside VulneraLab, which actively produces threat intelligence and analyzes the latest threats. Its Threat Hunting & Incident Response services have successfully penetrated the financial industry and government markets."
+      url: https://vulnerax.id
+      status: growth
+      startYear: "2024"
     - name: KotaCloud
       logo: /assets/projects/kotacloud.png
       description: "KotaCloud is a cloud platform delivering public and private Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS), including managed cloud-native application services."

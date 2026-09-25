@@ -143,6 +143,10 @@
     background: #e6f7ee;
     color: #1c7c47;
   }
+  &.growth {
+    background: #e3f2fd;
+    color: #1565c0;
+  }
   &.inactive {
     background: var(--card-bdr);
     color: var(--text-secondary-color);

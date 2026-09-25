@@ -3,6 +3,12 @@ import React from "react"
 const ProjectCard = ({ project }) => {
   const hasUrl = project.url && project.url !== "TBD" && project.url !== "#"
   const isTbd = (project.name || "") === "TBD"
+  const statusClass =
+    project.status === "active"
+      ? "active"
+      : project.status === "growth"
+      ? "growth"
+      : "inactive"
 
   return (
     <article className="project-card">
@@ -32,11 +38,7 @@ const ProjectCard = ({ project }) => {
               project.name
             )}
           </div>
-          <span
-            className={
-              "status-badge " + (project.status === "active" ? "active" : "inactive")
-            }
-          >
+          <span className={"status-badge " + statusClass}>
             {isTbd ? "—" : project.status}
           </span>
         </div>
