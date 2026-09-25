@@ -140,15 +140,15 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
   &.active {
-    background: #e6f7ee;
-    color: #1c7c47;
+    background: #1c7c47;
+    color: #ffffff;
   }
   &.growth {
-    background: #e3f2fd;
-    color: #1565c0;
+    background: #1e88e5;
+    color: #ffffff;
   }
   &.inactive {
-    background: var(--card-bdr);
-    color: var(--text-secondary-color);
+    background: #8a8a8a;
+    color: #ffffff;
   }
 }
