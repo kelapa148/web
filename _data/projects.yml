@@ -6,7 +6,13 @@
       description: "KotaCloud is a cloud platform delivering public and private Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS), including managed cloud-native application services."
       url: https://kotacloud.com
       status: active
-      startYear: "2024"
+      startYear: "2019"
+    - name: Jalaranu
+      logo: /assets/projects/jalaranu.png
+      description: "Jalaranu is a modular underlake data center project building computing infrastructure beneath Indonesian lakes. It evaluates thermal efficiency, operational reliability, and deployment feasibility compared to land-based data centers with water-based cooling, connecting shore-based support facilities with a submerged computing module."
+      url: https://jalaranu.org
+      status: active
+      startYear: "2026"
     - name: INESA
       logo: /assets/projects/inesa.png
       description: "Inovasi dan Edukasi Desa (INESA): a smart farming platform powered by IoT and AI that brings real-time land monitoring, AI-based recommendations, and automatic irrigation to Indonesian villages, starting with Desa Rajang, Pinrang."
