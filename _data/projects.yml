@@ -46,12 +46,12 @@
 - category: Health
   description: "Bridging computing and medicine. Our projects leverage health informatics, computer vision for medical diagnostics, and predictive modeling to enhance digital healthcare infrastructure and clinical outcomes."
   projects:
-    - name: TBD
-      logo: ""
-      description: TBD
-      url: ""
-      status: inactive
-      startYear: TBD
+    - name: CognirAI
+      logo: /assets/projects/cognir.png
+      description: "CognirAI is an advanced AI project that explores common and complex problems to be solved with AI. Beyond the healthcare sector, it also tackles social complexity - especially socio-quantitative analysis - as well as agriculture, computer vision, and security."
+      url: https://cognir.ai/solution/health
+      status: active
+      startYear: "2025"
 - category: Education
   description: "Transforming knowledge delivery through technology. We develop adaptive learning platforms, educational technology (EdTech) architectures, and data-driven tools to optimize the modern learning experience."
   projects:
